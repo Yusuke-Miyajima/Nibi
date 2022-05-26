@@ -1,0 +1,2482 @@
+<!DOCTYP html>
+<head>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<title>Mizu no Hoshi Work</title>
+	<link href="css/main.css" rel="stylesheet" />
+</head>
+<body>
+	<!-- ポップアップ  -->
+	<div class="popup" id="js-popup">
+		<div class="popup-inner example">
+			<div class="close-btn" id="js-close-btn" onclick="changeDisabled0()">
+				×
+			</div>
+			<div class="titleBox">
+				<h2>みずのほし について</h2>
+			</div>
+			<p>-頭の中だけで上映される映画-</p>
+			<br>
+			<p>映画には必ず映像があります。</p>
+			<p>様々な表情や景色を切り取り繋げる映像は、映画にとって欠かせない存在です。</p>
+			<br>
+			<p>しかし『みずのほし』には、”映像”がありません。</p>
+			<p>その代わりに、私たちは”音楽・脚本・イラスト”の要素で作品を形作りました。</p>
+			<p>そして作品を完成させる為にはもう一つ必要な要素があります。</p>
+			<p>それは想像することで、頭に浮かぶ”物語の景色”です。</p>
+			<p>”音楽・脚本・イラスト”とあなただけの”景色”</p>
+			<p>これらの要素が合わさることで、この作品は映画として完成します。</p>
+			<br>
+			<p>『みずのほし』が新しい映画体験となること、</p>
+			<p>そして受け取ってくださった方と、見えないけれど、</p>
+			<p>確かな繋がりを得られたらーーそう願って、制作をしました。</p>
+			<br>
+			<p>イラストを見て、脚本を読み、音楽を聴き、目を瞑り、</p>
+			<p>あなただけの『みずのほし』を上映してください。</p>
+			<p>最後まで上映が止まらないことを願っています。</p>
+			<br>
+			<p>Nibi</p>
+		</div>
+		<div class="white-background" id="js-black-bg" onclick="changeDisabled0()">
+		</div>
+	</div>
+	<!-- メニューバー  -->
+	<span class="menuBox">
+		<input id="menu-cb" type="checkbox" value="off">
+		<label id="menu-icon" for="menu-cb">≡</label><label id="menu-cl" for="menu-cb">×</label>
+		<label id="menu-background" for="menu-cb"></label>
+		<div id="ham-menu">
+			<ul>
+				<li><label id="menuBotan" for="menu-cb"><a href="index.html">Nibi/みずのほしについて</a></label></li>
+				<li><a href="../playlist/index.html" >プレイリスト</a></li>
+				<li><a href="../shop/index.html">作品購入</a></li>
+			</ul>
+		</div>
+	<!-- 台本ページ  -->
+	<section class="workPage">	
+		<div class="scenario">
+			<div class="volumeBox">
+				<div class="songTitle">歌声が響く広場</div>
+				<div class="volumeImg"></div>
+				<input type="range" name="volume" min="0" max="10" class="volumeRange input-range">
+			</div>
+		<div class="cssbk">
+			<label>
+					<input type="checkbox" >
+					<span style="z-index: 121;" class="pageDesign page00 "><span id="page00">
+							</span>
+						</span>
+					<span class="pageDesign rightPage page01" ><span id="page01"></span>
+					</span>
+			</label>
+			<label>
+					<input type="checkbox"  onclick="changeDisabled01()">
+					<span style="z-index: 120;" class="pageDesign page02 "><span id="page02">
+							</span>
+						</span>
+					<span class="pageDesign rightPage page03" ><span id="page03"></span>
+					</span>
+			</label>
+			<label>
+			<label>
+					<input type="checkbox"  onclick="changeDisabled02()">
+					<span style="z-index: 119;" class="pageDesign page04 "><span id="page04">
+							</span>
+						</span>
+					<span class="pageDesign rightPage page05" ><span id="page05"></span>
+					</span>
+			</label>
+			<label>
+					<input type="checkbox"  onclick="changeDisabled03()">
+					<span style="z-index: 118;" class="pageDesign page06 "><span id="page06">
+							</span>
+						</span>
+					<span class="pageDesign rightPage page07" ><span id="page07"></span>
+					</span>
+			</label>
+			<label>
+			<label>
+					<input type="checkbox"  onclick="changeDisabled04()">
+					<span style="z-index: 117;" class="pageDesign page08"><span id="page08">
+							</span>
+						</span>
+					<span class="pageDesign rightPage page09" ><span id="page09"></span>
+					</span>
+			</label>
+			<label>
+					<input type="checkbox"  onclick="changeDisabled05()">
+					<span style="z-index: 116;" class="pageDesign page010"><span id="page010">
+							</span>
+						</span>
+					<span class="pageDesign rightPage page011" ><span id="page011"></span>
+					</span>
+			</label>
+			<label>
+					<input type="checkbox"  onclick="changeDisabled06()">
+					<span style="z-index: 115;" class="pageDesign page012"><span id="page012">
+							</span>
+						</span>
+					<span class="pageDesign rightPage page013" ><span id="page013"></span>
+					</span>
+			</label>
+			<label>
+					<input type="checkbox"  onclick="changeDisabled07()">
+					<span style="z-index: 114;" class="pageDesign page014"><span id="page014">
+							</span>
+						</span>
+					<span class="pageDesign rightPage page015" ><span id="page015"></span>
+					</span>
+			</label>
+			<label>
+					<input type="checkbox"  onclick="changeDisabled08()">
+					<span style="z-index: 113;" class="pageDesign page016"><span id="page016">
+							</span>
+						</span>
+					<span class="pageDesign rightPage page017" ><span id="page017"></span>
+					</span>
+			</label>
+			<label>
+					<input type="checkbox" id="check0" onclick="changeDisabled0()">
+					<span style="z-index: 112;" class="pageDesign page018"><span id="page018">
+							</span>
+						</span>
+					<span class="pageDesign rightPage page019" ><span id="page019">aaa</span>
+					</span>
+			</label>
+			<label>
+					<input type="checkbox" id="check1" onclick="changeDisabled()">
+					<span style="z-index: 100;" class="pageDesign page1"><span id="page1">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;一年目<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;生まれ落ちた望月&emsp;響き渡る黎明<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ここがわたしたちの始まりの傷<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;泪の無いリンドウの香り&emsp;未必の夢<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br></span>
+						</span>
+					<span class="pageDesign rightPage" ><span id="page2">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;〇 水の星・上空（朝～夜）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;夜空に輝く機械仕掛けの満月。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;白銀の表面が時折、虹色のひかりを放つ。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;中心に青い裂け目が出来、ゆっくりと広がっていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;広がった裂け目から生まれたのは、大きな瞳。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;瞳の表面に、小さな箱庭が映し出されている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;かすかに歌が聴こえる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;空、朝から夜へ、夜から朝へ移り変わっていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;それに伴って、瞳に映る箱庭の景色も変化していく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;月、朝と夜が繰り返されるたびにだんだんと欠けてい<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;く。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;新月になった月。大きな瞳をゆっくりと閉じる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;月から巨大な涙が一粒零れ、まっすぐに落下していく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;水槽の中の箱庭へまっすぐ落ちていく涙。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;広い湖へ落ち、虹色に明滅を繰り返しながら、次第に<br></span>
+					</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check2" onclick="changeDisabled2()">
+						<span style="z-index: 99;" class="pageDesign"  ><span id="page3">
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;沈んでいく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;暗転。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 循環の湖<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;歌声が響く、果てのない大きな湖。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;歌声の主、色とりどりの水で出来た生物・us（ア<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ス）。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;姿かたちを変えながら、湖の砂浜に立っている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;湖、ごうごうと音を立てながら渦を巻いている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;渦の中で、幾つもの水の塊が跳ねている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;塊、鳥の形をしたものや、うさぎ、魚の形、usの形<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;に近いものなど様々。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;が、どれも未完成。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;渦の勢いによって生み出された幾つもの泡が、水流に<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;よって波打ち際まで押し出されていく。<br></span>
+					</span>	
+					<span class="pageDesign"><span id="page4">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;大きな泡の塊のひとつ、虹色に明滅しながら、押し流<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;されていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;砂浜で、usや動物たちがそれぞれ泡を迎える。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;白濁した泡、迎えた存在と同じ形に変化し、透き通っ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;usのひとりーーYou（ユー）、虹色の大きな泡を<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;波から引き剥がす。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;虹色の泡、Youが触れた途端に透き通り、You<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;と同じ姿・I（アイ）になる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Youに手を引かれ、陸へ上がるI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;鳥、泡の中から生まれた卵を背中に乗せて飛んでいく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;うさぎは群れをなして駆けていき、魚は川をのぼって<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;いく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;生まれたばかりのすべての生き物たち、みずのほしの<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;大地へ還っていく。<br></span>
+					</span>
+				</label>
+				<label>
+				<input type="checkbox" id="check3" onclick="changeDisabled3()">
+				<span style="z-index: 98;" class="pageDesign"><span id="page5">
+						&emsp;<br>		
+						&emsp;&emsp;&emsp;〇 ひかりの道（数週間後）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;歌いながら踊り、移動していくus。<br>						
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;その最後尾に、Iが歩いている。Iの前にはYou。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、動きを真似しているが、覚束ない。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;口を開き、歌おうとするが、体内の水が音を立てる<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;だけで、声にならない。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;俯くI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;usたち、Iに気づかず進んでいく。遅れているI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;You、Iの手を掴む。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、顔を上げる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Youに手を引かれ、進んでいくI。<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;〇 囁きの高台<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;大きな岩の塊があちらこちらにある高台。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;岩に寄りかかり、usたちと食事を共にしているI。<br></span>
+				</span>
+				<span class="pageDesign"><span id="page6">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;us、大きな葉に包んだ様々な木の実を掌で潰し、<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;中の水分を吸収する。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;水分の無くなった木の実、塵になり、風に攫われてい<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;く。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、あたりを見渡し、隣に座っているYouを見る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;You、赤い木の実を潰し、赤い汁を掌から取り込ん<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;でいる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、それを見ながら、木の実を両手で潰す。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;手を開くと、紫色の果汁がべっとりと広がってい<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;次第に吸収され、消えていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;You、Iに別の木の実を差し出すが、I、断る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 祝いの山（夜）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;山の麓。<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check4" onclick="changeDisabled4()">
+				<span style="z-index: 97;" class="pageDesign"><span id="page7">
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;青白くひかるキノコや、パステルカラーの植物が生え、<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;鬱蒼としている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;草を掻き分けながら歩くusやIらの周りを蛍が飛ん<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;でいる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、蛍に触れようとするが、逃げられる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;林を抜け、柔らかい芝生が生えた場所につくと、us<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;たち、横になり始める。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Youも地面に寝そべっている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;寝息が聞こえ始める。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、usたちを見渡す。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;皆、胎児のような姿。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、空を見上げる。月、細長くなっており、新月が近<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;い。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Youの傍に寝転び、目を閉じる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br></span>
+				</span>
+				<span class="pageDesign"><span id="page8">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;〇 生き物すべての庭（翌日・夕方～夜）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;循環の湖のほど近く。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;色とりどりの花が咲き誇る花畑の中央に、大きなキャ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ンプファイアーがある。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;キャンプファイアーを取り囲むようにして、usが手<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;を繋ぎ円を描いている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;歌い、踊り、笑いながらくるくると回るusたち。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;中央には十二人のusが三角座りをして座っている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;その中に、You。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;usたち、それぞれ別の花を一輪持っている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Youが持っているのはリンドウ。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;usの後ろ、大きな丸太を切って作った祭壇が置かれ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;動かない魚、うさぎ、鳥などの生き物が、祭壇の上に<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;寝かされている。全部で十八。<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check5" onclick="changeDisabled5()">
+				<span style="z-index: 96;" class="pageDesign"><span id="page9">
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;生き物の周囲には松ぼっくりに包まれた蝋燭が置かれ、<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;火がつけられている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、usたちに手を引かれるままぎこちなく踊ってい<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;るが、視線はYouに向けられている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;座っているusも、踊っているusも皆笑顔。Iだけが困惑<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;した表情。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;usたちの歌が盛り上がっていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、手を離し、座っているYouへ近づく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;You、笑っている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Youに手を伸ばす。その瞬間、広場のあかりが<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;すべて消える。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;歌っていたusが、中央にいたusや動物たちに一斉<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;に食らいつく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;歌が止み、大きな水音だけが響く。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;食べられた者たち、捕食者の身体と混ざり合っていく。<br></span>
+				</span>
+				<span class="pageDesign"><span id="page10">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;伸ばした手を引っ込めようとするIの手を、Youが<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;しっかりと掴む。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Youの身体、三本の亀裂があり、だんだんと広がっ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;っていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;亀裂から水が噴き出し、Iの身体を濡らす。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;驚くI。Youから離れようとするが、Youの身体<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;がどろどろに溶け、Iと融合し始める。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;リンドウが手から落ち、一緒になってIの身体に流<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;れ込んでいく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;激しい水音が鳴り響く中、広場に蹲るI。荒い呼吸を繰<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;り返す。<br>
+						&emsp;&emsp;&emsp;&emsp;I「 &#x22EE;&#x22EE;&#x22EE;」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Iの口から水の音がする。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;繰り返し発声しようとするI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;だんだんと周りも静かになり、消えていた火が再び灯<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check6" onclick="changeDisabled6()">
+				<span style="z-index: 95;" class="pageDesign"><span id="page11">
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;祭壇の動物たちや中央に居たusの姿は無い。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;us、手を取り合って踊り始める。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;なおも発声を続けるI。<br>
+						&emsp;&emsp;&emsp;&emsp;I「あ&#x22EE;&#x22EE;&#x22EE;い&#x22EE;&#x22EE;」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;usたち、歌い、踊り続けている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 同（翌日・早朝）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;胎児のように丸くなっていたI、目を覚ます。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;あたり、誰もいない。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;鳥の声が響き、上空を鳥や虫たちが飛んでいる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;皆、湖へ向かっている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Iも湖のほうへ歩いていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br></span>
+				</span>
+				<span class="pageDesign"><span id="page12">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;〇 循環の湖<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;循環の湖の水面、大きな渦ができており、細かな泡が<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;浮かび上がっている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;砂浜にusや動物たちがずらりと並び、皆湖を見つめ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;泡、波に揺られて砂浜へ押し流されてくる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、ぼうっと湖を眺めている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;usの一人、押し流されてきた泡を引っ張りあげてい<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;生まれたusを抱き留めるusを見ているI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ふたりが、一年前の自分とYouの姿と重なる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、ふたりに近づく。生まれたばかりのusの頬には<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;一本の亀裂。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;生まれたばかりのusの手を引き歩いて行こうとする<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;usの腕には、三本の亀裂がある。<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check7" onclick="changeDisabled7()">
+				<span style="z-index: 94;" class="pageDesign"><span id="page13">
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;腕を掴むI。usと目が合う。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;亀裂に触れると、usの姿が変化し、Iと全く同じに<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;なる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;笑っているus。I、後ずさる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;us、元の姿に戻り、生まれたばかりのusと手を繋<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;いで陸へ歩いていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;後ろ姿を見つめているI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>	
+						&emsp;&emsp;&emsp;〇 ひかりの道（昼）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;群れをつくり、踊りながら移動するus。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;その後ろを遅れながら付いていくI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;us、道端のアロエに似た草や低木に成っている実を<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;採集している。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、何もせずただ歩いている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br></span>
+				</span>
+				<span class="pageDesign"><span id="page14">
+						&emsp;<br>
+						&emsp;<br>	
+						&emsp;<br>
+						&emsp;&emsp;&emsp;〇 至る川<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;川で身を清めているus。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;泳いだり、水を掛け合ったりして笑っている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、大きな石の上に座ってusを見ているが、ばしゃ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ん、と水を掛けられる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;水を掛けたのは、新しく生まれたus。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;水、すぐに身体に吸収され消えていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;us、笑いながら去っていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、立ち上がり、水の中へ入っていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;水底に沈み、みなもを見上げるI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;魚、Iの身体に入ってくる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;驚いて身体を起こすI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;が、魚はIの身体を通り抜け、泳いでいく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ほっとするI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;辺りを見渡すと、usは皆水を飲んでいる。<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check8" onclick="changeDisabled8()">
+				<span style="z-index: 93;" class="pageDesign"><span id="page15">
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、近くのusを見て、<br>
+						&emsp;&emsp;&emsp;&emsp;I「 &#x22EE;&#x22EE;&#x22EE;ねえ」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;us、Iを見る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、言い淀む。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;しばらくの沈黙。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;us、笑っている。<br>
+						&emsp;&emsp;&emsp;&emsp;I「なんで笑ってるの？」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;us、笑っている。<br>
+						&emsp;&emsp;&emsp;us「なぜ、そんなことを聞くの？」<br>
+						&emsp;&emsp;&emsp;&emsp;I「 &#x22EE;&#x22EE;笑えないから」<br>
+						&emsp;&emsp;&emsp;us「なぜ？」<br>
+						&emsp;&emsp;&emsp;&emsp;I「それは&#x22EE;&#x22EE;」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;us、笑って走っていく。群れ、移動を始めている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、ゆっくり川岸へ向かい、usのあとを追う。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br></span>
+				</span>
+				<span class="pageDesign"><span id="page16">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;〇 囁きの高台<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;us、座って木の実や葉など、自分が集めた食材を食<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;べている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、石の上に登り、循環の湖を見ている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;渦は無く、穏やか。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;鐘が鳴り、us、立ち上がって移動しはじめる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、振り返り、usが移動しているのを見、岩から降<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;りようとするが足を滑らせる。<br>
+						&emsp;&emsp;&emsp;&emsp;I「わっ&#x22EE;&#x22EE;」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;転がり落ち、その勢いで崖からも落ちそうになる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;慌てるI。なんとか崖をよじ登る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;息を切らし、四つん這いになっているI。顔を上げる<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;が、usはいない。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;usの歌が遠くで聞こえる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;立ち上がり、また湖を眺めるI。<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check9" onclick="changeDisabled9()">
+				<span style="z-index: 92;" class="pageDesign"><span id="page17">
+						&emsp;<br>
+						&emsp;&emsp;&emsp;〇 至る川<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ひとりで歩いているI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;低木から実をとり、歩いてくる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;川に近づき、顔を突っ込んで水を飲む。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;月明かりに照らされた水面に、自分の顔が映っている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;一本の亀裂を触り、広げてみるI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;中に水の流れが見える。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;掌を開き、集めた実を見る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;潰すと、水分だけが吸収される。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;手を洗うI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 生き物すべての庭<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;やって来るI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;既に火は消えており、祭壇もない。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Youが座っていた場所付近に座るI。<br></span>
+				</span>
+				<span class="pageDesign"><span id="page18">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;寝転がり、眠る。<br>
+						<br>
+						&emsp;&emsp;&emsp;〇 慟哭の木（数日後・昼）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;大きな木。太い枝に小鳥が巣を作っており、たまごが<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;いくつかある。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;木に登っているI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;木になっている林檎をとっている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、巣を見つける。覗き込む。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;巣の中、たまごがふたつあり、小鳥が一匹鳴いている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;小鳥、陶器のような素材で出来ている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、そっと手をのばし、小鳥を触ろうとする。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;小鳥、くちばしでIの手をつつく。<br>
+						&emsp;&emsp;&emsp;&emsp;I「わっ&#x22EE;&#x22EE;」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、手を引っ込める。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;小鳥、Iを見つめている。<br></span>
+				</span>
+			</label>
+				<label>
+				<input type="checkbox" id="check10" onclick="changeDisabled10()">
+				<span style="z-index: 91;" class="pageDesign"><span id="page19">
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、もう一度手を伸ばす。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;そこに、大きな鳥が一匹飛んでくる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;羽音に驚いたI、悲鳴を上げ、木から落ちる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;大きなハスの葉の上に落ち、助かる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ほっとするI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;腕の中には採取した林檎。<br>
+						&emsp;&emsp;&emsp;&emsp;I「（林檎を落としていないのを見て）よかった」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;林檎の隙間から鳥が顔を出す。<br>
+						&emsp;&emsp;&emsp;&emsp;I「あれっ&#x22EE;&#x22EE;」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ばたばた、と広げた羽に亀裂が見える。<br>
+						&emsp;&emsp;&emsp;&emsp;I「 &#x22EE;&#x22EE;」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、小鳥を手にのせ、空へかかげる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;鳥、飛ばない。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;木の上、大きな鳥が飛んでいる。<br>
+						&emsp;&emsp;&emsp;&emsp;I「 &#x22EE;&#x22EE;帰らないの？」<br></span>
+				</span>
+				<span class="pageDesign"><span id="page20">
+						&emsp;<br>
+						&emsp;<br>	
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;チュンチュン鳴く小鳥。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;小鳥、飛び立つ。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、ハスの葉から降り、草を掻き分けながら進んでい<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;く。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;小鳥、Iの肩に乗る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、一瞬小鳥を見て、また正面を向き、歩いていく。<br>
+							<br>
+						&emsp;&emsp;&emsp;〇 至る川（夜）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;川の水を飲んでいるI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;小鳥、大きな葉にのせられた木の実をつついて食べて<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;いる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;水面に星空が映っている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;すると、流れ星のような強烈な光が横断する。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;空を見上げるI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;強烈な光、祝いの山へ落ちていく。<br></span>
+				</span>
+			</label>
+			</label>
+				<label>
+				<input type="checkbox" id="check11" onclick="changeDisabled11()">
+				<span style="z-index: 90;" class="pageDesign"><span id="page21">
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、そのまま川を横断し、ひかりのほうへ向かう。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;小鳥、Iの肩にとまる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 祝いの山。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;山道を歩くI。遠くに強く発光している何かが見える。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;光に集まる様に虫が飛んでいる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;早歩きで進んでいくI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;×&emsp;&emsp;×&emsp;&emsp;×<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;草木を掻き分け、光る何かに近づいていくI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;光る何か、巨大な花のつぼみ。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;幾多の虫が、つぼみを囲むように飛んでいる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;白く透き通った花びらに触れるI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;触れた途端、柔らかい桃色の光が胞子のように散り、<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;光が徐々に弱くなっていく。<br></span>
+				</span>
+				<span class="pageDesign"><span id="page22">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;Me「誰？」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;花びらの間から、Iと同じ背丈の人間が顔を出す。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;驚くI。後ずさる。<br>
+						&emsp;&emsp;&emsp;&emsp;I「あ、&#x22EE;&#x22EE;い&#x22EE;&#x22EE;」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;薄い花びらを掻き分けて出て来るMe。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meから距離をとる。身体が更に透明になり、闇<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;に溶け込んでいく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;遠ざかるIを反射的に掴むMe。<br>
+						&emsp;&emsp;&emsp;Me「I（アイ）？」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;再び蕾が光り、ふたりを淡く照らす。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meと似た人間の姿になっている。<br>
+						&emsp;&emsp;&emsp;Me「Iっていうのか？」<br>
+						&emsp;&emsp;&emsp;&emsp;I「あなたが、そう言った」<br>
+						&emsp;&emsp;&emsp;Me「はあ？」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meを見つめている。<br></span>
+				</span>
+			</label>
+			</label>
+				<label>
+				<input type="checkbox" id="check12" onclick="changeDisabled12()">
+				<span style="z-index: 89;" class="pageDesign"><span id="page23">
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、Iの腕を掴んでいるのに気づき、離す。<br>
+						&emsp;&emsp;&emsp;Me「&#x22EE;&#x22EE;ま、いいか&#x22EE;&#x22EE;」<br>
+						&emsp;&emsp;&emsp;&emsp;I「誰？」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;花びらの上にとまっていた小鳥が、Iの肩にとまる。<br>
+						&emsp;&emsp;&emsp;Me「俺？ 俺は&#x22EE;&#x22EE;」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、考え込んでいる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;小鳥、羽をふるわせる。<br>
+						&emsp;&emsp;&emsp;Me「忘れた」<br>
+						&emsp;&emsp;&emsp;&emsp;I「忘れた」<br>
+						&emsp;&emsp;&emsp;Me「なんでもいいや。じゃあ、Me（ミー）で」<br>
+						&emsp;&emsp;&emsp;&emsp;I「Me&#x22EE;&#x22EE;（と反芻する）」<br>
+						&emsp;&emsp;&emsp;Me「うん」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;小鳥、鳴く。<br>
+						&emsp;&emsp;&emsp;Me「その鳥何。ペット？」<br>
+						&emsp;&emsp;&emsp;&emsp;I「ペット？ &#x22EE;&#x22EE;違う」<br></span>
+				</span>
+				<span class="pageDesign"><span id="page24">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;Me「じゃあ食べてもいい？」<br>
+						&emsp;&emsp;&emsp;&emsp;I「ダメ」<br>
+						&emsp;&emsp;&emsp;Me「ふーん。友達なんだ。じゃ、名前は？」<br>
+						&emsp;&emsp;&emsp;&emsp;I「 &#x22EE;&#x22EE;じゃあ、You（ユゥ）」<br>
+						&emsp;&emsp;&emsp;Me「じゃあってなんだよ」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、笑う。<br>
+						&emsp;&emsp;&emsp;Me「で、此処は何処？」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meをじっと見つめている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 至る川（夜）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;焚火の前に座っているI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;火の周りには枝にさした魚が固定されている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、夜空の色に染められた川に手足を突っ込み、<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;魚を探している。<br>
+						&emsp;&emsp;&emsp;Me「Iも手伝えよ」<br></span>
+				</span>
+			</label>
+			</label>
+				<label>
+				<input type="checkbox" id="check13" onclick="changeDisabled13()">
+				<span style="z-index: 88;" class="pageDesign"><span id="page25">
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、立ち上がり、川に入っていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;足元を陶器のような魚が泳いでいる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;捕まえようとするが、掌をすり抜けてしまう。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、手を伸ばし、Iが逃した魚を捕まえる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Meが触れた瞬間、魚、色が変わり鮎に変わる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、それを見ている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、川から上がると、魚に枝を刺して焼く。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;魚、すぐに動かなくなる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;焼けた魚を手に取り、食べるMe。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Iにも串を差し出す。<br>
+						&emsp;&emsp;&emsp;Me「食べる?」<br>
+						&emsp;&emsp;&emsp;&emsp;I「いい。私は食べない」<br>
+						&emsp;&emsp;&emsp;Me「えっ。嫌いなのか？」<br>
+						&emsp;&emsp;&emsp;&emsp;I「食べたことない」<br>
+						&emsp;&emsp;&emsp;Me「普段は何食べるんだ？」<br></span>
+				</span>
+				<span class="pageDesign"><span id="page26">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;I「葉っぱとか、木の実とか&#x22EE;&#x22EE;水」<br>
+						&emsp;&emsp;&emsp;Me「水は"飲む"だろ」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、笑いながら魚を食べている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meを見つめている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;足元を泳いでいる魚、Iの足を通り抜け、闇に消えて<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;いく。<br>
+						&emsp;&emsp;&emsp;Me「あ、ここ生焼けだ&#x22EE;&#x22EE;」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;焚火が音を立てる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、足元を見つめている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;×&emsp;&emsp;×&emsp;&emsp;×<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;翌朝。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;川で顔を洗ったI。水面に映る自分を見る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Iの姿、Meの形に近づいている。<br></span>
+				</span>
+			</label>
+			</label>
+				<label>
+				<input type="checkbox" id="check14" onclick="changeDisabled14()">
+				<span style="z-index: 87;" class="pageDesign"><span id="page27">
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;川辺の木の枝に大きな葉を括り付け、簡易テントが作<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;られている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;テントの中、乾燥した藁を重ねて作った寝床があり、<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;そこにMe、寝ている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Meの傍に、植物の茎を編んで作ったズボンが作りか<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;けの状態で置いてある。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、髪の毛からぽたぽた水が落ちている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meの顔を覗き込む。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Meの頬にIの髪の毛から滴る水がおち、顔を顰める<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me。<br>
+						&emsp;&emsp;&emsp;&emsp;I「Me」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;外からテントの中にYouが入ってくる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;You、Meの頭にとまり、髪をくちばしで弄ぶ。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;唸るMe。<br>
+						&emsp;&emsp;&emsp;&emsp;I「Me。魚。いる？」<br></span>
+				</span>
+				<span class="pageDesign"><span id="page28">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;Me「うるさ&#x22EE;&#x22EE;」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、寝返りを打ち、Iに背を向ける。<br>
+						&emsp;&emsp;&emsp;&emsp;I「ねえ、Me」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;じっとMeの顔を見つめるI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;髪の毛からぼたぼたと水が落ちる。<br>
+						&emsp;&emsp;&emsp;Me「うるさ&#x22EE;&#x22EE;」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、寝返りを打ち、Iに背を向ける。<br>
+						&emsp;&emsp;&emsp;&emsp;I「ねえ、Me」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;じっとMeの顔を見つめるI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;髪の毛からぼたぼたと水が落ちる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ため息をついたMe、寝返りを打ち、薄目を開けて、<br>
+						&emsp;&emsp;&emsp;Me「髪拭けよ&#x22EE;&#x22EE;」<br>
+						&emsp;&emsp;&emsp;&emsp;I「え？」<br>
+						&emsp;&emsp;&emsp;Me「水。冷たい」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、髪の毛を押さえる。<br></span>
+				</span>
+			</label>
+			</label>
+				<label>
+				<input type="checkbox" id="check15" onclick="changeDisabled15()">
+				<span style="z-index: 86;" class="pageDesign"><span id="page29">
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、辺りを見渡す。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、ため息をつき起き上がると、網かけのズボンを<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;手に取って、<br>
+						&emsp;&emsp;&emsp;Me「いいやこれで……」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;とIの頭にズボンを掛け、テントを出ていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、髪の毛を拭きながら、Meの後ろ姿を見る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 祝いの山<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;切株の上に座り、槍を作っているMe。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、ズボンを履いている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、地面に座って編み物をしている。縫い目、下手<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;くそ。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、ちらちらIを見ている。<br>
+						&emsp;&emsp;&emsp;Me「そうじゃない。ちょっと貸して」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、渡す。<br>
+</span>
+				</span>
+				<span class="pageDesign"><span id="page30">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、正しい編み方をみせる。<br>
+						&emsp;&emsp;&emsp;Me「これを、ここに通して、こう。分かる？」<br>
+						&emsp;&emsp;&emsp;&emsp;I「うん」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meから受け取り、編む。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、ふたたび槍を作る。<br>
+						&emsp;&emsp;&emsp;Me「&#x22EE;&#x22EE;楽しい？」<br>
+						&emsp;&emsp;&emsp;&emsp;I「楽しい？」<br>
+						&emsp;&emsp;&emsp;Me「いや、俺は楽しくないけど」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、尖った石を枝の先につけるのに苦戦している。<br>
+						&emsp;&emsp;&emsp;&emsp;I「よくわからない」<br>
+						&emsp;&emsp;&emsp;Me「なんだそれ」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、手が滑って石で指を切る。<br>
+						&emsp;&emsp;&emsp;Me「痛！」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Meの指から血が出る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、驚いてMeに近づく。<br></span>
+				</span>
+			</label>
+			</label>
+				<label>
+				<input type="checkbox" id="check16" onclick="changeDisabled16()">
+				<span style="z-index: 85;" class="pageDesign"><span id="page31">
+						&emsp;<br>
+						&emsp;&emsp;&emsp;Me「平気。ちょっと切っただけ」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、血を見ている。<br>
+						&emsp;&emsp;&emsp;&emsp;I「なんで赤いの？」<br>
+						&emsp;&emsp;&emsp;Me「は？」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、訝しげ。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、地面に置いていた槍をとり、自分の肌を傷つける。<br>
+						&emsp;&emsp;&emsp;Me「なにしてんだよ！」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、慌てて槍を取り返し怒る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Iの腕、切った隙間から水の流れが見えるだけ。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;傷口、すぐに閉じ、治ってしまう。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;驚くMe。<br>
+						&emsp;&emsp;&emsp;&emsp;I「Meと私は、違うの？」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、切った指を押さえ、後ずさる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、怯えている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、ショックを受ける。<br></span>
+				</span>
+				<span class="pageDesign"><span id="page32">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;そのまま逃げていくMe。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;呆然とMeを見つめているI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 至る川（夕方）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;焚火のあとを見ているI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;網目が粗く、不格好なズボンを履いている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;You、鳴きながら、川辺に転がっている草や実をつ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ついて食べている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、火打石で火をおこそうとするが、つかない。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;何度もチャレンジするが、つかない。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;石を川に投げるI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;You、鳴いている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;しばらく川を睨んでいるI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Youの鳴き声、やまない。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Youを見て、<br></span>
+				</span>
+			</label>
+			</label>
+				<label>
+				<input type="checkbox" id="check17" onclick="changeDisabled17()">
+				<span style="z-index: 84;" class="pageDesign"><span id="page33">
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;I「うるさい！」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;You、鳴くのをやめ、Iを見ている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、困惑した表情。<br>
+						&emsp;&emsp;&emsp;&emsp;I「あ&#x22EE;&#x22EE;」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;You、飛び去っていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Youが遠ざかるのを見つめ、追おうとするが、<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;すぐにやめる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、川に入り、投げた火打石を探す。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;手探りで探しているが、見つからず、潜る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;潜って探すが、似たような石ばかりで分からない。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;どこからか歌が聴こえる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;立ち上がるI。下半身だけ川に浸かりながら、辺りを<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;見渡す。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;踊り、歌いながらやって来るus。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;us、笑いながらIに近づいてくる。<br></span>
+				</span>
+				<span class="pageDesign"><span id="page34">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;us、飲み、それぞれ水を飲み、歌い、踊りながらIに<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;笑いかけてくる。<br>
+						&emsp;&emsp;&emsp;&emsp;I「&#x22EE;&#x22EE;なんで笑ってるの」<br>
+						&emsp;&emsp;&emsp;us「なあに？」<br>
+						&emsp;&emsp;&emsp;&emsp;I「なんで笑ってるの」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;us、笑っている。<br>
+						&emsp;&emsp;&emsp;us「なぜ、そんなことを聞くの？」<br>
+						&emsp;&emsp;&emsp;&emsp;I「分からないから」<br>
+						&emsp;&emsp;&emsp;us「いいえ、分かるはず」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;us、Iに寄り添い、内緒話をするように小声で、<br>
+						&emsp;&emsp;&emsp;us「私たちはあなた、あなたは、私たちだから」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;us、全員Iと全く同じ姿になり、笑う。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;us、去っていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;遠ざかるus、Iと同じ姿にも、そうでないようにも<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;見える。<br></span>
+				</span>
+			</label>
+			</label>
+			<label>
+				<input type="checkbox" id="check18" onclick="changeDisabled18()">
+				<span style="z-index: 83;" class="pageDesign"><span id="page35">
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、胸を押さえ、震える。<br>
+						&emsp;&emsp;&emsp;&emsp;I「じゃあどうして&#x22EE;&#x22EE;」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;水面に映るI、悲しげ。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 至る川・テント内（夜）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;藁の上で蹲っているI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;足音が近づいてくる。Meだ。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、動かない。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Meの肩にのっていたYou、Iの枕元におりたち、<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;くちばしで髪の毛をつつく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;羽で耳を撫でるYou。I、反応しない。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、バツが悪そうにIを見ている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;しばらくの沈黙。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、足元に落ちていた槍を拾い、テントを支えて<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;いる大きな枝に立てかけ、床に座る。<br>
+</span>
+				</span>
+				<span class="pageDesign"><span id="page36">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;Me「ーーごめん」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、答えない。<br>
+						&emsp;&emsp;&emsp;Me「Iが、人間&#x22EE;&#x22EE;俺と同じじゃないのは、なんとなく気<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;づいてたんだけど、驚いて」<br>
+						&emsp;&emsp;&emsp;&emsp;I「 &#x22EE;&#x22EE;」<br>
+						&emsp;&emsp;&emsp;Me「怖いな、と思った」<br>
+						&emsp;&emsp;&emsp;&emsp;I「 &#x22EE;&#x22EE;もう平気なの？」<br>
+						&emsp;&emsp;&emsp;Me「まあ&#x22EE;&#x22EE;正直怖いけど。でもそんなん、誰であっても<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;そうだから」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、ゆっくり起き上がる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;見つめ合うMeとI。<br>
+						&emsp;&emsp;&emsp;&emsp;I「どうして私とMeは同じじゃないの？」<br>
+						&emsp;&emsp;&emsp;Me「え？」<br>
+						&emsp;&emsp;&emsp;&emsp;I「分からない。私と同じひとたちとも、私は&#x22EE;&#x22EE;違う」<br>
+						&emsp;&emsp;&emsp;Me「同じ&#x22EE;&#x22EE;ああ、確かに似たような&#x22EE;&#x22EE;」<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check19" onclick="changeDisabled19()">
+				<span style="z-index: 82;" class="pageDesign"><span id="page37">
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;I「私たちはあなた。あなたは、私たちだっていうの。で<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;も、私はそうは思えない」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meから目を逸らす。<br>
+						&emsp;&emsp;&emsp;&emsp;I「Meとも違う。あの人たちとも違う。じゃあ、私は<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;誰&#x22EE;&#x22EE;」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;しばらくの沈黙。Me、首の後ろ、もみあげのあたりを掻く。<br>
+						&emsp;&emsp;&emsp;Me「良く分かんないけど」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meを見る。<br>
+						&emsp;&emsp;&emsp;Me「Iは、Iなんじゃないの？ 俺は、俺だし。誰で<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;もない&#x22EE;&#x22EE;ひとりで。同じじゃない」<br>
+						&emsp;&emsp;&emsp;&emsp;I「&#x22EE;&#x22EE;私は、私&#x22EE;&#x22EE;」<br>
+						&emsp;&emsp;&emsp;Me「ビビった俺が言う事じゃないかもだけど、同じじゃな<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;くて当たり前というか。いや、当たり前っつーのもな&#x22EE;」<br>
+						&emsp;&emsp;&emsp;&emsp;I「でも、私たちはあなただって言った」<br>
+						&emsp;&emsp;&emsp;Me「ああ、うん、まあ向こうはな？ そう思ってるの<br>
+</span>
+				</span>
+				<span class="pageDesign"><span id="page38">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;かもしれないけど、Iは違うって思ったんだろ。じゃ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;あそうなんだよ。同じっていうか、似たところもあ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;るのかもしれないし、ないのかもしれないし」<br>
+						&emsp;&emsp;&emsp;&emsp;I「よくわからない」<br>
+						&emsp;&emsp;&emsp;Me「そんなもんだよ」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、泣く。<br>
+						&emsp;&emsp;&emsp;Me「ええ&#x22EE;&#x22EE;（と困る）」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;You、Iの膝に乗り、鳴く。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、ズボンのポケットからハンカチを取り出し、<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Iに渡す。<br>
+						&emsp;&emsp;&emsp;Me「これ、やるよ。作ったから」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、受け取る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meを見る。<br>
+						&emsp;&emsp;&emsp;Me「毎回ズボンで拭かれるのも困るからさ」<br>
+</span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check20" onclick="changeDisabled20()">
+				<span style="z-index: 81;" class="pageDesign"><span id="page39">
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、少し笑う。<br>
+						&emsp;&emsp;&emsp;Me「笑った」<br>
+						&emsp;&emsp;&emsp;I「え？」<br>
+						&emsp;&emsp;&emsp;Me「今笑ったろ」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;と笑うMe。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、驚いている。<br>
+						&emsp;&emsp;&emsp;Me「さ、疲れたしもう寝ようぜ」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;とMe、隣の藁布団に横になると、Iに背中を向ける。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;You、Meのうなじの位置に座り、眠る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、自分の頬に触りながら、仰向けに横になる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;テントの天井を見ながら、ゆっくりと目を閉じる。<br>
+						&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 至る川（数週間後）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;川にはいり、水面に手を伸ばし、魚を探しているI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;陶器のような魚が泳いでくる。捕まえるI。<br></span>
+				</span>
+				<span class="pageDesign"><span id="page40">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Iの姿、人間のすがたに限りなく近づいており、ワン<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ピースを着ている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、石を熱して肉を焼いている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;焼いた肉を大きな菜っ葉で巻いて食べるMe。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、暴れる魚を押さえようとするが、失敗して逃がし<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;してしまう。<br>
+						&emsp;&emsp;&emsp;Me「へたくそ」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、むっとする。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、そのまま川から出て、Meへ近づく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Meの目の前で手の水気をとばす。<br>
+						&emsp;&emsp;&emsp;Me「つめてっ、なにすんだよ！」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、笑っている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;すると、ゴロゴロ、と雷の音。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;空を見上げると、暗い色をした雲が迫ってきている。<br>
+						&emsp;&emsp;&emsp;&emsp;I「なに？」<br>
+</span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check21" onclick="changeDisabled21()">
+				<span style="z-index: 80;" class="pageDesign"><span id="page41">
+						&emsp;<br>
+						&emsp;&emsp;&emsp;Me「嵐がくるかもな。移動しよう」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、残った肉を口に詰め込むと、火を消して立ち<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;上がる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、飛んでいるYouに手を伸ばすと、Youが手にと<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;まる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;You、Iの服の中に入り、隠れる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 空白の洞窟<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;外、既にどしゃ降り。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;濡れた服を絞りながら入ってくるIとMe。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;洞窟のなか、うさぎやたぬき、鳥などの小動物が雨宿<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;りしている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;座るIとMe。<br>
+						&emsp;&emsp;&emsp;&emsp;I「テント。大丈夫かな」<br>
+						&emsp;&emsp;&emsp;Me「どうかな。この様子じゃダメかも」<br></span>
+				</span>
+				<span class="pageDesign"><span id="page42">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、がっかりする。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;You、Iの服から出て、羽を震わせ水気を飛ばす。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Meにうさぎが近づいてくる。<br>
+						&emsp;&emsp;&emsp;&emsp;I「（Meに）食べられちゃうよ」<br>
+						&emsp;&emsp;&emsp;Me「食わないよ。さっき飯くったばっかだし」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;といって、陶器のようなうさぎを抱え、膝に乗せる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Meに触れられた瞬間、本物のうさぎの姿になる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;じっとみつめているI。<br>
+						&emsp;&emsp;&emsp;Me「Iも触る？」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、悩む。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;おそるおそる触るI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;うさぎ、眠そうに目を閉じる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、うさぎを撫でながら、<br>
+						&emsp;&emsp;&emsp;Me「かわいいな」<br>
+						&emsp;&emsp;&emsp;&emsp;I「え？」<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check22" onclick="changeDisabled22()">
+				<span style="z-index: 79;" class="pageDesign"><span id="page43">
+						&emsp;<br>
+						&emsp;&emsp;&emsp;Me「うさぎ」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、うさぎを撫でる。微笑んでいる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;しばらくの沈黙。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;うさぎ、目を開けて、Meの膝から飛び降りると、洞<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;窟の奥へ行ってしまう。<br>
+						&emsp;&emsp;&emsp;&emsp;I「あっ&#x22EE;&#x22EE;」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、立ち上がり、追おうとするが、やめる。<br>
+						&emsp;&emsp;&emsp;Me「仲間にでも呼ばれたか」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、欠伸をし、身体の後ろに手を付いて膝を伸ばす。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、じっと洞窟の奥を見ている。<br>
+						&emsp;&emsp;&emsp;Me「どうした？」<br>
+						&emsp;&emsp;&emsp;&emsp;I「ううん。もう会えないのかなって」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;座って、ポケットから青い実を取り出し、食べる。<br>
+						&emsp;&emsp;&emsp;Me「どうかな。でもうさぎってそんな珍しくないだろ、<br>
+</span>
+				</span>
+				<span class="pageDesign"><span id="page44">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;このへん。また見れるんじゃね」<br>
+						&emsp;&emsp;&emsp;&emsp;I「うん&#x22EE;&#x22EE;」<br>
+						&emsp;&emsp;&emsp;Me「 &#x22EE;&#x22EE;」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Iの持っている青い実をつまんでたべるMe。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Youも食べる。<br>
+						&emsp;&emsp;&emsp;&emsp;I「前も」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;雨脚が強まる。<br>
+						&emsp;&emsp;&emsp;&emsp;I「前も、似た&#x22EE;&#x22EE;笑えない&#x22EE;&#x22EE;笑いたくない時があった」<br>
+						&emsp;&emsp;&emsp;Me「 &#x22EE;&#x22EE;」<br>
+						&emsp;&emsp;&emsp;I「私が湖から生まれた時、手を引いてくれたひとが&#x22EE;&#x22EE;」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、続きが言えない。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、Iを見ている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、苦しそうな表情。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;洞窟の奥へ顔だけ向けるI。<br>
+						&emsp;&emsp;&emsp;&emsp;I「なんなんだろう、これ」<br>
+</span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check23" onclick="changeDisabled23()">
+				<span style="z-index: 78;" class="pageDesign"><span id="page45">
+						&emsp;<br>
+						&emsp;<br>
+
+</span>
+				</span>
+				<span class="pageDesign"><span id="page46">
+						&emsp;<br>
+						&emsp;<br>
+</span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check24" onclick="changeDisabled24()">
+				<span style="z-index: 77;" class="pageDesign"><span id="page47">
+						&emsp;<br>
+						&emsp;<br>
+
+
+						&emsp;&emsp;&emsp;Me「……」<br>
+						&emsp;&emsp;&emsp;I「Meは、知ってる？」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meを見る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、Iから目を逸らす。<br>
+						&emsp;&emsp;&emsp;Me「知ってどうすんの？」<br>
+						&emsp;&emsp;&emsp;Me「仲間にでも呼ばれたか」<br>
+						&emsp;&emsp;&emsp;I「……」<br></span>
+				</span>
+				<span class="pageDesign"><span id="page48">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、黙る。<br>
+						&emsp;&emsp;&emsp;Me「やまないな」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、洞窟の外を眺めている。<br>
+						&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 至る川（翌日）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;晴天。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;至る川、増水しており、濁っている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;水を見て、驚いているI。<br>
+						&emsp;&emsp;&emsp;I「すごい……」<br>
+						&emsp;&emsp;&emsp;Me「そんなに珍しいのか？」<br>
+						&emsp;&emsp;&emsp;I「こんなのはじめてだよ」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、川沿いを歩いている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ふたり、テントを探している。<br>
+						&emsp;&emsp;&emsp;Me「あー……やっぱな」<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check25" onclick="changeDisabled25()">
+				<span style="z-index: 76;" class="pageDesign"><span id="page49">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;藁のベッド、散らばっており、ぐちゃぐちゃ。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、辺りを見渡し、飛ばされているテントの屋根代<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;大きな湖へ落ち、虹色に明滅を繰り返しながら、次<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;わりだった葉を見つける。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;駆け寄り、拾ってみる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ところどころ破けているが、無事。<br>
+						&emsp;&emsp;&emsp;Me「どう？」<br>
+						&emsp;&emsp;&emsp;I「使えるかも」<br>
+						&emsp;&emsp;&emsp;Me「じゃあ一応それ持って、材料探しに行くか」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、葉をくるくると巻いて、抱える。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 祝いの山<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;材料を探しているMeとI。<br>
+						&emsp;&emsp;&emsp;Me……」<br></span>
+				</span>
+				<span class="pageDesign"><span id="page50">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;I「あんまりよさそうなのないね」<br>
+						&emsp;&emsp;&emsp;Me「やまないな」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、折れた枝を持ち上げようとするが、重すぎて諦める<br>
+						&emsp;&emsp;&emsp;Me「大きい葉っぱも嵐で飛ばされてるし……洞窟も悪くは<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ないけど、寒すぎる」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、顔を上げて辺りを見渡すと、白い花が見える。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Meが出て来た巨大な白い花。<br>
+						&emsp;&emsp;&emsp;I「あ、あれは？」<br>
+						&emsp;&emsp;&emsp;Me「え？」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、Iが指さす方向を見る。<br>
+						&emsp;&emsp;&emsp;Me「ああ、あそこ……なるほどな」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、巨大な白い花へ向かっていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、テントを持ってあとをついていく。<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check26" onclick="changeDisabled26()">
+				<span style="z-index: 75;" class="pageDesign"><span id="page51">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;〇 花びらの宇宙船<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;花びらを掻き分けて中をみるMe。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;中、人が数人入れるスペースがある。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;中に入るMe。<br>
+						&emsp;&emsp;&emsp;Me「嵐でも無事だったみたいだし……うん、悪くないかも<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;な。床、弾力があっていたくないし」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;寝そべるMe。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、入り口にテントを立てかけて、中へ入る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;いくつもの花びらに覆われた室内。太陽のひかりが<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;僅かに入っている。<br>
+						&emsp;&emsp;&emsp;I「ふたりで入っても平気そうだね」<br>
+						&emsp;&emsp;&emsp;Me「最初からここにすればよかったな」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;あくびを零すMe。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、隣に寝そべる。しばらくの沈黙。<br>
+						&emsp;&emsp;&emsp;I「Meはこの花から生まれたの？」<br></span>
+				</span>
+				<span class="pageDesign"><span id="page52">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;Me「……いや、違うと思う」<br>
+						&emsp;&emsp;&emsp;I「じゃあなんでここから出てきたの」<br>
+						&emsp;&emsp;&emsp;Me「うーん……覚えてないけど……」<br>
+						&emsp;&emsp;&emsp;I「けど？」<br>
+						&emsp;&emsp;&emsp;Me「別の所で生まれて、これに乗ってきたような……」<br>
+						&emsp;&emsp;&emsp;I「ような？」<br>
+						&emsp;&emsp;&emsp;Me「だから、覚えてないんだって」<br>
+						&emsp;&emsp;&emsp;I「ふうん」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、天井を見つめている。<br>
+						&emsp;&emsp;&emsp;I「……Me」<br>
+						&emsp;&emsp;&emsp;Me「んー」<br>
+						&emsp;&emsp;&emsp;Me<br>
+						&emsp;&emsp;&emsp;I「お腹すいた」<br>
+						&emsp;&emsp;&emsp;Me「いってらっしゃい」<br>
+						&emsp;&emsp;&emsp;I「Meも行くんだよ」<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check27" onclick="changeDisabled27()">
+				<span style="z-index: 74;" class="pageDesign"><span id="page53">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meのズボンを引っ張る。<br>
+						&emsp;&emsp;&emsp;Me「えー……」<br>
+						&emsp;&emsp;&emsp;I「いいから」<br>
+						&emsp;&emsp;&emsp;Me「わかったから引っ張るなよ。伸びる」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、起き上がり、Iと共に花びらの中から出る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 囁きの高台<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;空を見ているI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、大きな岩の上に乗り、寝っ転がっている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;雲がゆるやかに流れ、とんぼが飛んでいる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、苺を食べている。You、葉っぱの上にのったど<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;んぐりをつついている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;遠くからusの歌声が聞こえ、I、食べるのをやめる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;葉っぱのお皿を置き、立ち上がるI。<br></span>
+				</span>
+				<span class="pageDesign"><span id="page54">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;usたちが踊り、歌いながら近づいてきている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、ゆっくり起き上がり、<br>
+						&emsp;&emsp;&emsp;Me「（usを見ながら）綺麗な歌だけど。……ちょっと不気<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;味だけど」<br>
+						&emsp;&emsp;&emsp;I「え？」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、Iを見る。<br>
+						&emsp;&emsp;&emsp;Me「感情がないっていうか……無機質っていうか。安心す<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;るけど」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I「安心する（と復唱）」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me「何も感じなくてすむ」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;岩から飛び降りるMe。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;近づいて来たusが、MeとIの間を次々と通り過ぎて<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;いく。<br>
+						&emsp;&emsp;&emsp;Me「Iが、自分とあいつらは違うって言ってたの、分か<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check28" onclick="changeDisabled28()">
+				<span style="z-index: 73;" class="pageDesign"><span id="page55">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;る気がする」<br>
+						&emsp;&emsp;&emsp;I「悪口？」<br>
+						&emsp;&emsp;&emsp;Me「なんでだよ」<br>
+						&emsp;&emsp;&emsp;I「私はMeとも違うよ」<br>
+						&emsp;&emsp;&emsp;Me「それは……そうだろ」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、困っている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、黙り込む。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;usを見つめているI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;しばらくの沈黙。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;歌が遠ざかっていく。<br>
+						&emsp;&emsp;&emsp;Me「そういえばIが歌ったところ見たことないな」<br>
+						&emsp;&emsp;&emsp;I「……歌わないよ」<br>
+						&emsp;&emsp;&emsp;Me「音痴とか？」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、無視して歩き出す。<br></span>
+				</span>
+				<span class="pageDesign"><span id="page56">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、足元の葉っぱを千切って、草笛にすると、吹く。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;IとMe、なだらかな丘を歩いていく。<br>
+						&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 上空（数日後）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;金色に輝く月。瞳、閉じている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;月が欠けていく。<br>
+						&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 花びらの宇宙船（昼）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;花びらの宇宙船を掃除しているIとMe。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;もみじの山で火を起こし、焼き芋をしている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 黎明の湯（夜）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;温泉を見つけ、お風呂に入っているふたり。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check29" onclick="changeDisabled29()">
+				<span style="z-index: 72;" class="pageDesign"><span id="page57">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;〇 上空（数日後）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;橙色に輝く月。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;更に月がかけていく。<br>
+						&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 至る川（昼）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;川に草で作った小舟を流しているIとMe。」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Iがつくった舟に乗り、Youが流れていく。<br>
+						<br>
+						&emsp;&emsp;&emsp;〇 祝いの山（夜）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ひかるキノコが地面を照らす、幻想的な場所。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;色とりどりのひかりを放つ蛍を見て感動しているMe<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;とI。<br>
+						&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 上空（数日後）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;夜空に青白く輝く月。<br></span>
+				</span>
+				<span class="pageDesign"><span id="page58">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;更に月がかけていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 囁きの高台（昼）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;雪が積もっている高台。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ゆきだるまを作っているIとMe。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;You、雪だるまの上に乗っている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;だるそうに雪だるまの下半身を作っているMeに雪玉<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;をぶつけるI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、雪玉を投げ返す。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、笑っている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;<br>	
+						&emsp;&emsp;&emsp;<br>	
+						&emsp;&emsp;&emsp;<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check30" onclick="changeDisabled30()">
+				<span style="z-index: 71;" class="pageDesign"><span id="page59">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;二年目<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;お伽噺の独り言 続かない平穏<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;鐘に酷似した小鳥のさえずり<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;白濁と彩雲の隙間 変革は泡になる<br>
+						&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;<br>			
+						&emsp;&emsp;&emsp;〇 花びらの宇宙船（夜）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ふたりと一匹で熟睡しているIとMe、You。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Iの二の腕に、二本の亀裂。<br>
+						&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 上空（数日後）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;冷え冷えとした、虹色のひかりを放つ月。満月。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;朝から夜、夜から朝と移り変わり、新月になってい<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;く。<br></span>
+				</span>
+				<span class="pageDesign"><span id="page60">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;〇 ひかりの道（夕方）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;手で額に傘を作り、雨を遮って走るMe。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ひかりの道を走っていると、湖の方角が赤くひかっ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ているのが見える。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;目を凝らし、走り寄るMe。<br>
+						&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 上空（夜）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;新月。閉じていた目が開く。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;夜空に、月の瞳だけが煌々と輝いている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;月の瞳に、大きなキャンプファイアーと、それを囲<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;み踊るusの姿が映っている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;祭りの様子が、月の瞳を通してクローズアップされ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check31" onclick="changeDisabled31()">
+				<span style="z-index: 70;" class="pageDesign"><span id="page61">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;〇 生き物すべての庭<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;盛大な演奏と、usの歌声が響く広場。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;中央で、大きなキャンプファイアーが爛々と燃えて<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;いる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;雨が降っているのに、キャンプファイアーが消える<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;様子はない。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;キャンプファイアーを取り囲むようにして、usが手<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;を繋ぎまわっている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ズームアウト。月の瞳がMeの瞳と重なる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、広場の様子をぼうっと見つめている。炎がバチ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;バチと音を立てる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Meの瞳から、涙が落ちる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br></span>
+				</span>
+				<span class="pageDesign"><span id="page62">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;〇 花びらの宇宙船<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;激しい雨の音。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;うっすらと透けた花びらに勢いよく雨粒が落ち、ぼ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;つぼつ音を立てる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、ゆっくり起き上がる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ぼうっとしているIの所へ、Youがやってくる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;You、伸びたIの髪を引っ張る。<br>
+						&emsp;&emsp;&emsp;I「なに、You……引っ張らないで……」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;You、翼を広げ、鳴く。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;そのまま花びらの外へ出ていこうとする。<br>
+						&emsp;&emsp;&emsp;I「やめなよ。濡れちゃうよ。……もう、Meも遅いね。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;雨宿りしてるのかな」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;You、くちばしで花びらを引っ張り、外へ出ようと<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;している。<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check32" onclick="changeDisabled32()">
+				<span style="z-index: 69;" class="pageDesign"><span id="page63">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;I「迎えに行きたいの？」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;You、鳴く。<br>
+						&emsp;&emsp;&emsp;I「しょうがないな」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Youに近づき、ワンピースの胸ポケットにYouを<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;入れると、入り口に立てかけてある葉っぱの傘を持<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ち、外へ出る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 祝いの山<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;祝いの山を下りているI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;辺りは静まり返っている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Iのワンピースの中でYouが先へ先へ進んでいるため、<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;引っ張られているような形。<br>
+						&emsp;&emsp;&emsp;I「ちょっとYou、落ち着いてよ……」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;You、鳴いて服を引っ張っている。<br></span>
+				</span>
+				<span class="pageDesign"><span id="page64">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;仕方なく走るI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 ひかりの道<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Youをワンピースごとくるんで抱きかかえ、走っ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;遠くに見える至る川が氾濫している。赤いひかりが<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;見える。<br>
+						&emsp;&emsp;&emsp;I「あっち？」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;You、鳴く。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;走り寄るI。<br>
+						&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 生き物すべての庭<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;大雨の中、炎が燃えている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;手を繋いで踊るus。皆雨を気にせずはしゃいでいる。<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check33" onclick="changeDisabled33()">
+				<span style="z-index: 68;" class="pageDesign"><span id="page65">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;色とりどりの波のようになっている。青ざめるI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;You、ワンピースから抜け出し、飛んでいく。<br>
+						&emsp;&emsp;&emsp;I「You！」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;手を伸ばすI。が、雨に紛れて見えなくなる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、空を見上げる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;月、見えない。<br>
+						&emsp;&emsp;&emsp;I「新月……」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;祭壇に松ぼっくりの蝋燭がいくつも並んでいる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;前回より多い、六十本。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;祭壇に並んだ動物は少ない。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;三十人のus、皆三本の亀裂が身体のどこかに入って<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;いる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、持っていた傘を放り投げ、ひとりのusの手を取<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;り、<br></span>
+				</span>
+				<span class="pageDesign"><span id="page66">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;I「逃げよう！」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;と引っ張る。us、なかなか立ち上がらないが、無理<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;やり引っ張るI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ぬかるんだ地面で滑るが、諦めない。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;us、引っ張られるまま、Iについていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 ひかりの道<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;走っているIとus。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、必死だが、us、笑っている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;引っ張らないと止まりそうな様子のus。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;どこからか、草笛の音が聞こえる。<br>
+						&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 同・至る川<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;走っているI。咳き込んでいる。<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check34" onclick="changeDisabled34()">
+				<span style="z-index: 67;" class="pageDesign"><span id="page67">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;us、涼し気な表情。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;氾濫している川。濁流。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;大木や、大きな葉、木の実など、色んなものが流れ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;呼吸が出来ないほどの大雨が、Iとusに降り注ぐ。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 同・光の道（昼）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;疲れ切っているI。<br>
+						&emsp;&emsp;&emsp;I「早く！」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;と怒る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;us、反応しない。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 花びらの宇宙船<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ほとんど夜明けが近く、藍色の空に柔らかいグリー<br></span>
+				</span>
+				<span class="pageDesign"><span id="page68">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ンが差し込んでいる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;雨、ほとんどやんでおり、晴れ間が見えている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;息切れしているI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;花びらの宇宙船に近づいていく。<br>
+						&emsp;&emsp;&emsp;I「よかった……（助かった、といいかける）」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;つないでいた手が離れる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;驚いて振り向くI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;usの割れ目がどんどん広がり、はじける。咄嗟に遠<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ざかるI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;体勢を崩し、しりもちをつくが、そのまま後ろへ下<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;がる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;usだった液体、地面に広がり、雨と混じりながらI<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;へ近づく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;が、Iは必死に距離をとる。<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check35" onclick="changeDisabled35()">
+				<span style="z-index: 66;" class="pageDesign"><span id="page69">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;usだった液体、水たまりに混じって消えていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;それを見つめ、荒い呼吸を繰り返すI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ずるっと後ろについていた手が滑る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;地面に頭を打ち、慌てて起き上がろうとするが、起<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;き上がれない。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;掌を見ると、半透明になり、溶けだしているのに気<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;づく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;身体が透き通り、人のような形から、生まれた時の<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;姿へと戻っていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;そこへ、MeとMeの肩に乗っているYouが近づいてく<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Youの鳴き声でふたりに気づくI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;すでにどろどろの塊になっている。<br>
+						&emsp;&emsp;&emsp;I「……」<br></span>
+				</span>
+				<span class="pageDesign"><span id="page70">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;口を開くが、水の音しかしない。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Meの指先からYouが飛び立ち、Iに向かって飛んで<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;くる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;You、翼を広げる。Youの翼に、三本の亀裂。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;亀裂が広がり、弾ける。<br>
+						&emsp;&emsp;&emsp;I「（なんで、と口が動くが声にならない）」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Youの水、Iの体内へ入っていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;IとYouの液体が混ざり合う。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、そのまま頭から形を取り戻していく。<br>
+						&emsp;&emsp;&emsp;I「いやッ！」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、暴れるが、すぐに手足が生え、人に似た姿へ戻<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;っていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;透明だった身体も色を得る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Iの様子を見ているMe。<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check36" onclick="changeDisabled36()">
+				<span style="z-index: 65;" class="pageDesign"><span id="page71">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Youを取り出そうともがくが、出来ない。<br>
+						&emsp;&emsp;&emsp;I「Me！ Youが！」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;叫ぶI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、何も言わずIを見ている。<br>
+						&emsp;&emsp;&emsp;I「Me……？」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meの様子がおかしいことに気づく。<br>
+						&emsp;&emsp;&emsp;Me「なんで連れ出したりしたの」<br>
+						&emsp;&emsp;&emsp;I「え？」<br>
+						&emsp;&emsp;&emsp;Me「Iのせいで、命が無駄になった」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、しゃがみ、usが居た地面を撫でる。<br>
+						&emsp;&emsp;&emsp;I「何……（言ってるの？）」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、立ち上がり、Iに背を向け歩いていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meの背中を呆然と見つめている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Meの背中、遠ざかり、見えなくなっていく。<br></span>
+				</span>
+				<span class="pageDesign"><span id="page72">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;立ち上がり、力なMeを追うI。<br>
+						&emsp;&emsp;&emsp;I「ねえ、Me！」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、立ち止まらない。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、ぬかるんだ地面で滑り、転びそうになりながら<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;も走っていく。<br>
+						&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 生き物すべての庭<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;us、共喰いしている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;互いに互いを吸収し、分離し、また吸収しあってい<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;それを無表情で見つめているMe。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、震えている。<br>
+						&emsp;&emsp;&emsp;I「ねえ、Me……」<br>
+						&emsp;&emsp;&emsp;Me「Youがいなくなって、悲しい？」<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check37" onclick="changeDisabled37()">
+				<span style="z-index: 64;" class="pageDesign"><span id="page73">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;I「え……？ 当たり前でしょう……！ さっきからおかしい<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;よ、Me！」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;叫ぶI。<br>
+						&emsp;&emsp;&emsp;Me「そう。やっぱり失敗だったな」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、愕然とする。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、Iを見る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Meの瞳、月の瞳と同じ。<br>
+						&emsp;&emsp;&emsp;I「Youが、死んじゃったんだよ！？」<br>
+						&emsp;&emsp;&emsp;Me「Iが殺したんだろ」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、息を呑む。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;首を横に振り、Meから距離を置く。<br>
+						&emsp;&emsp;&emsp;I「違う」<br>
+						&emsp;&emsp;&emsp;Me「そうだよ。Iがひとり連れ出しちゃって、それなの<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;に水を受け入れないから、数が合わなくなって、め<br></span>
+				</span>
+				<span class="pageDesign"><span id="page74">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ちゃくちゃになっちゃったんだ。生きる年月も、全<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;部の数も、決めてたのに。……俺がいろいろ食べちゃ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ったのも、原因だけど」<br>
+						&emsp;&emsp;&emsp;I「……(意味が)分からない」<br>
+						&emsp;&emsp;&emsp;Me「そっか」<br>
+						&emsp;&emsp;&emsp;I「説明してよ」<br>
+						&emsp;&emsp;&emsp;Me「してるだろ」<br>
+						&emsp;&emsp;&emsp;I「してない。Me、あなたは一体……」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Meの月の瞳がＩから逸れる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Iの足元の水たまりに、Meが映っている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Iの指先から雫が落ち、みなもが揺れる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;水たまりに、Meの代わりに月が映っている。<br>
+						&emsp;&emsp;&emsp;Me「おれがこの世界を作ったんだ」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、一歩前に出る。<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check38" onclick="changeDisabled38()">
+				<span style="z-index: 63;" class="pageDesign"><span id="page75">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;水たまりにIの素足が触れ、水が濁る。<br>
+						&emsp;&emsp;&emsp;I「どういうこと？」<br>
+						&emsp;&emsp;&emsp;Me「誰も傷つかない世界を作りたかった。だから、決<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;められた命を持った感情の無い生き物に満たされた<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;この星を作った。平等で、平和な箱庭……水槽を作り<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;たかったんだ」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、首を横に振って、俯く。<br>
+						&emsp;&emsp;&emsp;I「……全然、わかんない」<br>
+						&emsp;&emsp;&emsp;Me「ずっと、記憶を失くしてたんだ。さっき、祭りを見<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;て、やっと思い出した。今日死ぬはずのusがひと<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;りいないのに気が付いて、捜しに来たらIが連れ出<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;してた。本来食われるはずのusが取り込まれず死<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;んだから、取り込まなかったIが死にかけた。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;それを、Youが助けた。お前は、Youに救われ<br></span>
+				</span>
+				<span class="pageDesign"><span id="page76">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;たんだよ」<br>
+						&emsp;&emsp;&emsp;I「そんな……」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、震える。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、Iを見ている。<br>
+						&emsp;&emsp;&emsp;Me「……ごめん」<br>
+						&emsp;&emsp;&emsp;I「……え？」<br>
+						&emsp;&emsp;&emsp;Me「こんなこと聞かされて、ショックだろ。Ｉに感情が<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;あるのは、おれのミスだ。ごめん」<br>
+						&emsp;&emsp;&emsp;I「なに、え……？」<br>
+						&emsp;&emsp;&emsp;Me「失敗だった。感情なんていれるつもりなかったのに。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;そしたら、祭りで誰を失っても悲しまずに済んだし、<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Youがお前の代わりに死んでもショックを受けなか<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;った。そもそも、usを連れ出すなんてしなかったは<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ずだ。……こうやっておれに傷つけられることもなか<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check39" onclick="changeDisabled39()">
+				<span style="z-index: 62;" class="pageDesign"><span id="page77">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;った。ごめん」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、Iを見つめている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、手を握りしめている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、哀しげ。<br>
+						&emsp;&emsp;&emsp;I「…………なんで怒ってるの？」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ME、困惑。<br>
+						&emsp;&emsp;&emsp;Me「どうして、おれが怒るんだ？怒るなら、Iのほう<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;だろ。こんな理不尽な目にあわされて……」<br>
+						&emsp;&emsp;&emsp;I「わたしは……」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、声が震えている。<br>
+						&emsp;&emsp;&emsp;I「わたしは、ただ……Youと、もっと一緒に居たかっただ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;けだよ」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、驚く。<br>
+						&emsp;&emsp;&emsp;I「この世界を作ったとか、失敗とか、よくわかんない。<br></span>
+				</span>
+				<span class="pageDesign"><span id="page78">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;わたしはただ、Youがいなくなったから悲しいだ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;け」<br>
+						&emsp;&emsp;&emsp;Me「……だから、それはおれのせいだって――」<br>
+						&emsp;&emsp;&emsp;I「（遮って）違う。これはわたしの気持ち。Meのもの<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;じゃない」<br>
+						&emsp;&emsp;&emsp;Me「……その気持ちを作ったのはおれで――」<br>
+						&emsp;&emsp;&emsp;I「(遮って)違う！」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meに掴みかかる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、水たまりの上にしりもちをつく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、水たまりに膝をつき、Meに圧し掛かっている。<br>
+						&emsp;&emsp;&emsp;Me「――感情が無ければ、こんなふうに苦しまなかったん<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;だ」<br>
+						&emsp;&emsp;&emsp;I「Meはなにも分かってない」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、黙る。<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check40" onclick="changeDisabled40()">
+				<span style="z-index: 61;" class="pageDesign"><span id="page79">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meをまっすぐ見ている。<br>
+						&emsp;&emsp;&emsp;I「私は……感情なんてなければいいと思ったこと、一度も<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;ない」<br>
+						&emsp;&emsp;&emsp;Me「……」<br>
+						&emsp;&emsp;&emsp;I「だってそうじゃなきゃ……You<とMeとの時間が幸せだな<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;んて思えなかった」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;しばらくの沈黙。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、立ち上がり、Meに背を向けて、よろよろと歩き<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;出す。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、起き上がり、Iの後姿を見つめている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、ふらついてそのまま倒れる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、立ち上がってIに近づく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、疲弊して気絶している。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Iを見つめているMe。<br></span>
+				</span>
+				<span class="pageDesign"><span id="page80">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;〇 花びらの宇宙船<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;花びらの宇宙船内で横になっているI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Iに布をかけ、花びらを掻き分けて出ていくMe。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;三年目<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;灯の沖合い 信仰の明滅<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;加害者共の生煮え ほろびの最寄り<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;曖昧と車窓 世界のひみつ、朝、朝<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 上空（数日後）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;金色に輝く月。瞳、閉じている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;月が満ちていく。<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check41" onclick="changeDisabled41()">
+				<span style="z-index: 60;" class="pageDesign"><span id="page81">
+						&emsp;<br>
+						&emsp;<br>			
+						&emsp;&emsp;&emsp;〇 慟哭の木<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;竪穴が開いている大きな木。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;中に溜まっていた落ち葉やごみを綺麗に掃除して、<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;住めるように作り変えているI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;藁を置いてベッドを作ったり、小さな穴を窓<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;に再利用したり、自分でテーブルを作ったりしてい<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 花びらの宇宙船<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;花びらの宇宙船に置いていた服を持って<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;引っ越しをするI。<br>
+						&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 上空（数か月後）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;青色に輝く月。<br></span>
+				</span>
+				<span class="pageDesign"><span id="page82">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;更に月が満ちていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;月の瞳、開いている。<br>
+						&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 至る川（昼）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;無邪気に遊んでいるusを眺めているI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;小舟を作って流していると、usが近づいてくる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;us、真似して小舟を流す。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;流れていく小舟を見つめるI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 黎明の湯（夜）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;大きな岩で囲まれた温泉。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;湯船につかり、リラックスしているI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;猿や鹿など、他の動物も浸かっている。<br>
+						&emsp;&emsp;&emsp;<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check42" onclick="changeDisabled42()">
+				<span style="z-index: 59;" class="pageDesign"><span id="page83">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;〇 上空（数日後）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;夜空に輝く橙色の月。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;更に月が満ちていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 囁きの高台（昼）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;雪が積もっている高台。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;かまくらの中で、あたたかな木苺ジュースを飲んで<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;いるI。傍らにはうりぼう。<br>
+						&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 慟哭の木（夜）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;乾草に白い布を敷いたベッドに横になり、眠ってい<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;るI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;木にあいた小窓から、月のひかりが部屋を照<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;らしている。<br></span>
+				</span>
+				<span class="pageDesign"><span id="page84">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;〇 上空（数日後）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;黄金のひかりを放つ月。満月。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;満月。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;月の瞳、Iを映している。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 慟哭の木<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;木のバケツを持って、中に入るI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、汲んできた水を木の根っこに通じている穴に注<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ぎ入れる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;木のバケツを置き、外に出るI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;慟哭の木にまきついた丈夫な蔦を使い、上へのぼっ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;枝と枝が草の紐で結ばれている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ワンピースやTシャツ、スカート、ズボンなどが干<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;してある。<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check43" onclick="changeDisabled43()">
+				<span style="z-index: 58;" class="pageDesign"><span id="page85">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;紐を木の枝から外し、そのまま紐を掴んで枝から飛<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ぶI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;服が重力に従い、Iの手元へ落ちていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、地面に着地。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;服を回収して、また竪穴に戻る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;服をベッドに放りなげ、着ていたワンピースを脱ぐ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;と、ポールハンガーのように幾つも枝がわかれてい<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;る若木にひっかける。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ベッドに散らばった服の中から、うす黄色に染まっ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;たワンピースを着る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;机の上に置いていたハンカチをポケットにしまい、<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;外に出る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ハンカチ、Meから貰った物。年季が入っている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br></span>
+				</span>
+				<span class="pageDesign"><span id="page86">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;〇 至る川<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;顔を洗っているI。ハンカチで顔を拭く。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;川から出て、歩いていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 花びらの宇宙船<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;花びらを掻き分け、中を見るI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;中、細かな葉っぱや木の棒などが落ちている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、砂や葉を手で払う。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;髪を結んでいる紐を取ってほどき、寝そべる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;天井を見上げるI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;花びらごしに太陽と青空がうっすらみえる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;目をつぶる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check44" onclick="changeDisabled44()">
+				<span style="z-index: 57;" class="pageDesign"><span id="page87">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;〇 循環の湖（夕方）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;軽やかなusの歌声が響く湖。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;usたち、砂浜で遊んでいる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;小さな葉っぱに赤い木の実をたくさんのせ、かかえ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;て食べているI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;砂浜を歩いている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;usの近くを通り過ぎようとするが、水を掛けられる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;驚いて葉っぱを取り落とし、赤い実が落ちる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;波に攫われていく赤い実。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;usたち、笑って踊っている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、usに水を掛ける。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;usたちと遊ぶI。笑っている。<br>
+						<br>
+						&emsp;&emsp;&emsp;〇 ひかりの道<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;びしょぬれのI、歩いている。<br></span>
+				</span>
+				<span class="pageDesign"><span id="page88">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;髪の毛を手でまとめ、水を絞り、結ぶ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 慟哭の木（夜）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、室内へ入る。机の上に大きな葉にのった赤い実を葉ごと置く。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;黄色いワンピースを脱ぎ捨てて、ベッドに身体を投<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;げ出すI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;そのまま眠りにつく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 至る川（翌日）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;川の水に浸かり、水浴びついでに服を洗っているI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ぽつぽつと雨が降ってくる。<br>
+						&emsp;&emsp;&emsp;I「えー……」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;慌てて川から出て、服を抱え走る。<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check45" onclick="changeDisabled45()">
+				<span style="z-index: 56;" class="pageDesign"><span id="page89">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;〇 同・空白の洞窟<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;小さな洞窟の中に入るI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;服、全部濡れている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ため息をついて座るI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;洞窟の中、動物が雨宿りしている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;そのなかに、うさぎをみつけるI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;うさぎ、Meが触った時と同じ、本物と同じ姿。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、しゃがみこみ、ゆっくりと近づく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;うさぎ、逃げずにIを見ている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、うさぎに手を伸ばし、そっと抱え上げ、膝にの<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;せて撫でる。<br>
+						&emsp;&emsp;&emsp;I「かわいい」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;うさぎ、目をつぶって、されるがままになっている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;動物、Iに近づいてくる。<br></span>
+				</span>
+				<span class="pageDesign"><span id="page90">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、動物に囲まれながら、雨がやむのを待つ。<br>
+						&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;×&emsp;&emsp;×&emsp;&emsp;×<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;あちこちの岩にIの服が掛けられている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、岩に寄りかかったまま寝ている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;抱えられていたうさぎ、飛んで外へ出ていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、ゆっくり起きる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;外、晴れている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 慟哭の木<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;木に登り、服を干しているI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;枝に紐を巻き付け、飛ばないように固定する。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;そのまま木を降りようとして、バランスを崩して落<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check46" onclick="changeDisabled46()">
+				<span style="z-index: 55;" class="pageDesign"><span id="page91">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ちる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;悲鳴を上げるI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;大きな葉っぱの上に着地し、助かる。<br>
+						&emsp;&emsp;&emsp;I「（あ）っぶな……」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、起き上がると、布が裂ける嫌な音。<br>
+						&emsp;&emsp;&emsp;I「……」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;スカート、縦に裂け目が出来ている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 慟哭の木<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;木にあいた穴から、日差しが入ってきている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;椅子の上で胡坐をかき、Ｔシャツ姿でスカートを編<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;んでいるI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ほとんど完成している。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;時々机の上の赤い実を食べて編む。<br></span>
+				</span>
+				<span class="pageDesign"><span id="page92">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;上手でもないが、下手でもない縫い目。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、最後まで編み、仕上げる。<br>
+						&emsp;&emsp;&emsp;I「できたー……」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、ため息をつく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;スカートを着てみる。裂け目を上手く使い、少しス<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;リットの入ったようなデザイン。<br>
+						&emsp;&emsp;&emsp;I「よし」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、そのまま外に出る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 ひかりの道<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;歩いているI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;すると、usたちが固まっている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、近づいていくと、中心に誰かが倒れている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;駆け寄ってしゃがみ、前髪に隠れた顔を見ると、Me。<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check47" onclick="changeDisabled47()">
+				<span style="z-index: 54;" class="pageDesign"><span id="page93">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;髪留めに見覚えがある。Iのもの。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;驚くI。Meの額に手を当てる。<br>
+						&emsp;&emsp;&emsp;I「……Me？」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、うなされており、返事はない。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meを背負って歩き出す。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 慟哭の木<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ずるずるとMeを引き摺りながら、中に入るI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ベッドに一緒に倒れ込み、深呼吸する。Me、意識が<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ない。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meを覗き込む。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、机の下に置いている大きな葉っぱを持って、竪<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;穴を出ていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br></span>
+				</span>
+				<span class="pageDesign"><span id="page94">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;〇 至る川<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;葉っぱを持ってやってくるI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;水を汲み、また走って戻る。<br>
+						&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 慟哭の木<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;戻ってくるI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、ベッドから起き上がり、出て行こうとしている<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ところ。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、Iを見て、目を逸らす。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、水の入った葉っぱの皿を机に置くと、Meをベッ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ドに突き飛ばす。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、ベッドに倒れる。<br>
+						&emsp;&emsp;&emsp;Me「な（にするんだ）……！」<br>
+						&emsp;&emsp;&emsp;I「寝て」<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check48" onclick="changeDisabled48()">
+				<span style="z-index: 53;" class="pageDesign"><span id="page95">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;Me「いや……」<br>
+						&emsp;&emsp;&emsp;I「（窘めるように）Me」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、黙る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、一度外に出て、一回り小さい葉っぱをもってく<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ると、水を汲む。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;黙っているMeに渡す。<br>
+						&emsp;&emsp;&emsp;I「水飲んで」<br>
+						&emsp;&emsp;&emsp;Me「……」<br>
+						&emsp;&emsp;&emsp;I「何？」<br>
+						&emsp;&emsp;&emsp;Me「……なんでもない」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、水を飲む。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;それを見ているI。<br>
+						&emsp;&emsp;&emsp;I「まだ飲む？」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、首を横に振る。<br></span>
+				</span>
+				<span class="pageDesign"><span id="page96">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meから葉っぱを受け取り、もう一度くんで渡す。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、飲む。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、葉っぱを受け取って、<br>
+						&emsp;&emsp;&emsp;I「おやすみ」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;とMeの肩を押す。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、横になる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meの体に大きな布を被せる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、ポケットからハンカチを出すと、水に浸し、絞<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Meの額にハンカチをのせるI。<br>
+						&emsp;&emsp;&emsp;Me「……I」。<br>
+						&emsp;&emsp;&emsp;I「何？」<br>
+						&emsp;&emsp;&emsp;Me「……なんでもない」<br>
+						&emsp;&emsp;&emsp;I「へんなの」<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check49" onclick="changeDisabled49()">
+				<span style="z-index: 52;" class="pageDesign"><span id="page97">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、目を閉じる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meを見ている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;×&emsp;&emsp;×&emsp;&emsp;×<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;石の上でハーブをすりつぶしているI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;少しずつ水、蜂蜜などを混ぜている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;混ざったものを小さな葉っぱの上にのせ、寝ている<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Meに近づく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Meの口を開け、ゆっくりと飲ませるI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、目をあける。<br>
+						&emsp;&emsp;&emsp;Me「まずい」<br>
+						&emsp;&emsp;&emsp;I「文句言わない」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、舐め終わる。<br></span>
+				</span>
+				<span class="pageDesign"><span id="page98">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、水を差しだす。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、飲んで、また横になる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;外、雨が降り続けている。<br>
+						&emsp;&emsp;&emsp;Me「人間みたいだな」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、笑う。<br>
+						&emsp;&emsp;&emsp;I「Meに似たのかも」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、嫌そうにして、寝返りを打つ。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Meの背中を見て笑うI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;しばらくの沈黙。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、食器を片付けようとする。<br>
+						&emsp;&emsp;&emsp;Me「……なにもいわないんだな」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、食器を机に置き、Meを見る。<br>
+						&emsp;&emsp;&emsp;I「なんて言ってほしいの？」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、ゆっくり起き上がる。<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check50" onclick="changeDisabled50()">
+				<span style="z-index: 51;" class="pageDesign"><span id="page99">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、真剣な表情でMeを見ている。<br>
+						&emsp;&emsp;&emsp;I「久しぶり。元気だった？」<br>
+						&emsp;&emsp;&emsp;Me「……嫌味かよ」<br>
+						&emsp;&emsp;&emsp;I「置いて行ったんだから、せめて元気でいてよ」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、言葉に詰まる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;考え込んでいる様子のMe。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、MEの言葉を待つ。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;しばらくの沈黙。<br>
+						&emsp;&emsp;&emsp;Me「……もう会わないつもりだった」<br>
+						&emsp;&emsp;&emsp;I「何も言わないで居なくなったら、さよならにはなら<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;	ないよ」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、椅子に座ってMeを見る。<br>
+						&emsp;&emsp;&emsp;Me「じゃあ何になったんだ」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;しばらくの沈黙。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Iの横顔を、月明かりが柔らかく照らしている。<br></span>
+				</span>
+				<span class="pageDesign"><span id="page100">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;リンドウ色の瞳がMeを映している。<br>
+						&emsp;&emsp;&emsp;I「憎しみ」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ME、息を呑む。<br>
+						&emsp;&emsp;&emsp;I「嘘だよ」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;と微笑むI。<br>
+						&emsp;&emsp;&emsp;ME「……いや、いい。当然だし」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、視線を逸らす。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、ため息をつく。<br>
+						&emsp;&emsp;&emsp;I「あのさ。なんでそうやって全部、自分の中で完結さ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;せるの？」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、立ち上がってMeに近づく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、Iを見ない。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meの顔を両手で掴み、自分のほうを向かせる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;驚くMe。<br>
+						&emsp;&emsp;&emsp;I「待ってたよ。Meのこと」<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check51" onclick="changeDisabled51()">
+				<span style="z-index: 50;" class="pageDesign"><span id="page101">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;Me「……なんで？」<br>
+						&emsp;&emsp;&emsp;I「MeとYouとの時間が大切だったから」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meの顔を放し、ベッドの縁に座る。<br>
+						&emsp;&emsp;&emsp;I「Meが何も言わないで居なくなっても、ただ“不在”が<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;続いただけ。不在は死じゃない」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、黙っている。<br>
+						&emsp;&emsp;&emsp;I「おやすみ」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、立ち上がって机の食器を持ち、外へ出る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;後ろ姿を見つめているＭｅ。軽く咳をする。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 祝いの山(翌日)<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;山菜やきのこをとっているI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;乾燥した茎を編んで作った網にのせていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br></span>
+				</span>
+				<span class="pageDesign"><span id="page102">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;〇 至る川<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;少し水が減った川。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;増水したときに水が溜まったくぼみ、魚が泳いでい<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;魚、鮎など、Meが掴んでいた魚と同じ。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;大きく深呼吸をして、掴むI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 慟哭の木<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ざるに焼いた魚、きのこ、山菜などをのせ、竪穴に<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;入るI。<br>
+						&emsp;&emsp;&emsp;I「ただいま」<br>
+						&emsp;&emsp;&emsp;Me「……おかえり」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ベッドに横になっていたMe、起き上がるI、持って<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;きた食材を机に置く。<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check52" onclick="changeDisabled52()">
+				<span style="z-index: 49;" class="pageDesign"><span id="page103">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;I「ご飯食べな。あったかいうちに」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、椅子を引く。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、ゆっくりベッドから出て、椅子に座る。<br>
+						&emsp;&emsp;&emsp;Me「（食材を見て）これ……」<br>
+						&emsp;&emsp;&emsp;I「難しかった」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、苦笑している。<br>
+						&emsp;&emsp;&emsp;Me「…………いただきます」<br>
+						&emsp;&emsp;&emsp;I「いただきます」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、ご飯を食べ始める。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、赤い実を食べる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 囁きの高台（翌日）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、軽やかに走っている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、だるそうに歩いている。<br></span>
+				</span>
+				<span class="pageDesign"><span id="page104">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;Me「病み上がりなんだけど」<br>
+						&emsp;&emsp;&emsp;I「良い運動になるでしょ？」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、ため息をつく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、岩に登り、大きく伸びをする。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;風で服が広がる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Iの服、タンクトップにワイドパンツ。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;岩の下に座り、葉っぱで目を覆うMe。<br>
+						&emsp;&emsp;&emsp;I「寝るの？」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、無視する。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、ため息をつく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;岩から飛び降りて、草を千切る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;もう一度岩の上に登り、草笛を吹き始める。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、起きている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Iの演奏が続く。<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check53" onclick="changeDisabled53()">
+				<span style="z-index: 48;" class="pageDesign"><span id="page105">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;〇 ひかりの道<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;紫の実を食べながら歩いているふたり。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;usが向かいから来る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、usの手にハイタッチする。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;us、そのまま踊りつつ、通り過ぎていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;usを振り返るMe。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;usの歌声、遠ざかる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;同じフレーズを歌うI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、驚く。<br>
+						&emsp;&emsp;&emsp;Me「歌えないんじゃなかったの」<br>
+						&emsp;&emsp;&emsp;I「歌わなかっただけ（と笑う）」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、usと同じように踊って進む。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;一瞬身体がusと同じアメーバ状になり、まただんだ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ん固まって人間の姿になる。<br></span>
+				</span>
+				<span class="pageDesign"><span id="page106">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;見つめているMe。<br>
+						&emsp;&emsp;&emsp;I「私たちはあなた。あなたは、私たち。私は私……」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;歌っているIの後ろ姿をまぶしそうに見ているMe。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 慟哭の木（夜）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;少しだけ月明かりが差し込む木のなか。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、眠っている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、ハンカチを作っている。Me、物音を聞き、ゆっくり目を開ける。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、ゆっくり起き上がる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、ハンカチを葉っぱの下に隠す。<br>
+						&emsp;&emsp;&emsp;I「起こした？」<br>
+						&emsp;&emsp;&emsp;Me「いや……」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;MeとI、見つめ合う。<br>
+						&emsp;&emsp;&emsp;Me「……」<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check54" onclick="changeDisabled54()">
+				<span style="z-index: 47;" class="pageDesign"><span id="page107">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;I「変な顔」<br>
+						&emsp;&emsp;&emsp;Me「明日……」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、小窓から月を見る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;月、ほとんど新月に近い。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、黙って微笑んでいる。<br>
+						&emsp;&emsp;&emsp;Me「……」<br>
+						&emsp;&emsp;&emsp;I「へんてこな顔」<br>
+						&emsp;&emsp;&emsp;Me「くどい」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、笑う。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、顔を逸らす。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;しばらくの沈黙。<br>
+						&emsp;&emsp;&emsp;Me「……怖い？」<br>
+						&emsp;&emsp;&emsp;I「……どうだろう」<br>
+						&emsp;&emsp;&emsp;Me「嘘つき」<br></span>
+				</span>
+				<span class="pageDesign"><span id="page108">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、Iを見ている。<br>
+						&emsp;&emsp;&emsp;I「怖いけど、それだけじゃない。なんだろうな……」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;少し考えるI。<br>
+						&emsp;&emsp;&emsp;I「いつか分かるよ」<br>
+						&emsp;&emsp;&emsp;Me「…………Iは」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ME、口ごもる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meを見ている。<br>
+						&emsp;&emsp;&emsp;ME「どうして……」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、言葉に詰まり、黙る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、椅子から降りて、ベッドに入ってくる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、少しだけ壁側に詰める。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meを見つめている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、黙って見つめ返す。<br>
+						&emsp;&emsp;&emsp;I「おやすみ」<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check55" onclick="changeDisabled55()">
+				<span style="z-index: 46;" class="pageDesign"><span id="page109">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;Me「……おやすみ」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;見つめ合っているふたり。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Meに抱き着いて、目をつぶるI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Iを抱きしめかえすMe。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;くっついているふたり<br>
+						&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 同・慟哭の木（夕方）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、リンドウ色のワンピースを着て、髪の毛を結んで<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;いる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;その様子を眺めているMe。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、振り向くと、Meと目が合う。<br>
+						&emsp;&emsp;&emsp;I「いこう」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、立ち上がる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br></span>
+				</span>
+				<span class="pageDesign"><span id="page110">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;〇 生き物すべての庭（真夜中）<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;色とりどりの花が咲き誇る広場。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;中央に祭壇があり、何人かのusが座っている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;周りを手を繋いだusが囲み、歌いながら踊っている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;手を繋いでいるIとMeがやってくる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;回りながら踊っているus、IとMeに気づくと道を開<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ける。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;IとMe、中央へ歩いていく。<br>
+						&emsp;&emsp;&emsp;I「Me」<br>
+						&emsp;&emsp;&emsp;Me「なに？」<br>
+						&emsp;&emsp;&emsp;I「ダンス、できる？」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meを見る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、Iを見て、狼狽える。<br>
+						&emsp;&emsp;&emsp;Me「やったことない」<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check56" onclick="changeDisabled56()">
+				<span style="z-index: 45;" class="pageDesign"><span id="page111">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、笑う。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meの手を引いて、もう片方の手も繋いで踊り出<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;す。<br>
+						&emsp;&emsp;&emsp;Me「いや、無理」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、無視して踊り始める。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、たどたどしい足取りで付き合う。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;usと比べ、ふたりのダンス、下手。<br>
+						&emsp;&emsp;&emsp;Me「I」<br>
+						&emsp;&emsp;&emsp;I「なに？」<br>
+						&emsp;&emsp;&emsp;Me「不在じゃない“死”は……何になると思う？」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、Iを見る。<br>
+						&emsp;&emsp;&emsp;I「……分からない。Youの死も、あの人の死も、ただの<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;死だよ」<br>
+						&emsp;&emsp;&emsp;Me「…………」<br></span>
+				</span>
+				<span class="pageDesign"><span id="page112">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;I「でも、一緒に居られて、嬉しかった」<br>
+						&emsp;&emsp;&emsp;Me「もう会えなくても？」<br>
+						&emsp;&emsp;&emsp;I「うん」<br>
+						&emsp;&emsp;&emsp;Me「……会わなければ良かったとは、思わない？」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、首を横に振る。<br>
+						&emsp;&emsp;&emsp;I「……思えない」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;I、微笑む。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;I、Meと繋いだ手を高く上げ、腕の下をくぐる。<br>
+						&emsp;&emsp;&emsp;Me「――俺は」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;Me、俯く。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;MeとIのつたないダンスがとまる。<br>
+						&emsp;&emsp;&emsp;Me「俺は、そんなふうに思えない。思えるようになる、<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;自信がない」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;I、Meを見つめている。<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check57" onclick="changeDisabled57()">
+				<span style="z-index: 44;" class="pageDesign"><span id="page113">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;Me「多分何度も、もっと一緒に居たかったと、思うよ」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;Me、usを見る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;揺れている月の瞳を見つめるI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;I、笑う。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;Me、顔を顰める。<br>
+						&emsp;&emsp;&emsp;Me「何？」<br>
+						&emsp;&emsp;&emsp;I「それって……（笑いながら）幸せだったってことじゃ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ない」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;Me、言葉に詰まる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;I、Meの手を引く。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;Me、手を引かれるままに再び踊り出す。<br>
+						&emsp;&emsp;&emsp;I「じゃあ、無理だよ」<br>
+						&emsp;&emsp;&emsp;Me「……え？」<br>
+						&emsp;&emsp;&emsp;I「もう幸せになっちゃったから、幸せを知らないMe<br></span>
+				</span>
+				<span class="pageDesign"><span id="page114">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;には戻れないよ」<br>
+						&emsp;&emsp;&emsp;Me「……」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;I、Meの顔を覗き込む。<br>
+						&emsp;&emsp;&emsp;Me「お前、結構酷いこと言うな」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;Me、呆れる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;I、笑う。<br>
+						&emsp;&emsp;&emsp;I「……本当かな」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;Me、Iを見る。<br>
+						&emsp;&emsp;&emsp;I「本当に、わたしやYouと会わなければよかったって<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;思える？」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;Me、Iの手を上に引き、無理やり回転させる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;笑うI。<br>
+						&emsp;&emsp;&emsp;Me「……すごい自信」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;I、笑っている。<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check58" onclick="changeDisabled58()">
+				<span style="z-index: 43;" class="pageDesign"><span id="page115">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;つたない踊りを続けるふたり。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;usたちも回転しながら、楽し気に踊っている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、踊りながら歌い始める。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Iの力強い歌声が響く広場。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;踊っているusたちの声、Iの声に呑まれていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Iの声に影響されるように、usたちの歌声も変わっ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;usたち、全員人の姿になっている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;MeとI、互いしか見ていない。<br>
+						&emsp;&emsp;&emsp;Me「……前、失敗作って言ったろ」<br>
+						&emsp;&emsp;&emsp;I「うん。ムカついた。すっごく」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;と言いながら、Iが一回転する。<br>
+						&emsp;&emsp;&emsp;I、Meの手を高く上げる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;今度はMeがIの腕をくぐる。<br></span>
+				</span>
+				<span class="pageDesign"><span id="page116">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;Me「取り消すよ」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I、Meの身体を支える。<br>
+						&emsp;&emsp;&emsp;Me「ごめん」<br>
+						&emsp;&emsp;&emsp;I「……しょうがないな（と笑う）」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ふたり、踊っている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;しばらく踊り続けるが、次第にIの身体が透き通っ<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ていく。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;手を離すI。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;髪の毛に付けていたリンドウを、Meの髪の毛にさす。<br>
+						&emsp;&emsp;&emsp;I「Me」<br>
+						&emsp;&emsp;&emsp;Me「なに」<br>
+						&emsp;&emsp;&emsp;I「今度は私がMeを見てる」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Iの身体が炎に照らされ、赤いヴェールを纏う。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ごぼり、と水が沸き上がる音。<br></span>
+				</span>
+			</label>
+			<label>
+				<input type="checkbox" id="check59" onclick="changeDisabled59()">
+				<span style="z-index: 42;" class="pageDesign"><span id="page117">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;Me「……うん」<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Iの身体、水になってMeを濡らす。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;リンドウを持って立ち尽くすMe。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、俯く。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;濡れた髪から水が滴る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;usたちの歌声、聴こえない。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Iの歌声だけが聴こえてくる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;顔を上げるMe。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;us、ひとつの波になってMeを包み込んでいる。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Iの音楽に満ちていく広場。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、花を髪に差し、ひとりで踊る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;歌が止まない広場。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;炎に照らされ生まれたMeの影、<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Meにも、Iにも、usにも見える。<br></span>
+				</span>
+				<span class="pageDesign"><span id="page118">
+						&emsp;<br>
+						&emsp;<br>
+						&emsp;&emsp;&emsp;〇 慟哭の木<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;少しだけ月明かりが差し込む木のなか。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Me、ひとりで寝転がっている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Iの作ったハンカチを傍らに置いている。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ゆっくり目を瞑っていくMe。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+						&emsp;&emsp;&emsp;〇 同・上空<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;夜空に輝く月。満月。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;大きな目が中央に鎮座している。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Meと同じように目を閉じる月。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;月、もう涙を流していない。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;静まり返ったみずのほしに、<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;リンドウ色の夜明けがやって来る。<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;（終）<br></span>
+				</span>
+			</label>
+		</div>
+		</div>
+	</section>
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+</html>

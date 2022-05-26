@@ -1,0 +1,48 @@
+<!DOCTYP html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="作曲家・大村知也とシンガーソングライター・高橋のりえによる音楽プロジェクトNibiによる初回作品、音楽・脚本・絵のみで成り立つ頭の中だけで上映される映画作品みずのほしを制作するプロジェクト。" />
+	<meta name="keywords" content="Nibi,みずのほし,大村知也,高橋のりえ" />
+	<meta property="og:site_name" content="Nibi『みずのほし』公式サイト" />
+	<meta property="og:image" content="/app/assets/images/image.jpg" />
+	<title>Mizu no Hoshi Top</title>
+	<%= stylesheet_link_tag 'top.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+	<section class="topPage">
+		<div class="titleBox1">
+			<h1>Nibi first project</h1>
+			<div class="titleBox">
+				<h2 class="projectTitle">みずのほし</h2>
+				<h2 class="subTitle">Mizu no Hoshi</h2>
+			</div>
+			<div class="screened">screened in mind, with only music, script and illustrations.</div>
+		</div>
+		<div class="btnBox1">
+		<div class="btnBox">
+			<div class="loginBtn">
+				<label class="open" for="pop-up">Log in</label>
+			</div>
+			<div class="buyBtn"><a href="shop/index.html">ご購入</a></div>
+		</div>
+		<input type="checkbox" id="pop-up">
+		<div class="overlay">
+			<div class="window">
+				<label class="close" for="pop-up">×</label>
+				<p class="loginTitle">Log In</p>
+				<form action="work/index.html" method="post">
+					<div class="inputBox">
+						<%= form_for(@passeord, url: '/password') do |f| %>
+							<div>
+								<input type="password" id="pass" name="password" placeholder="パスワード" class="passBox">
+							</div>
+							<input type="submit" class="loginBtn2" value="ログイン">
+							<% end %>
+					</div>
+				</form>
+			</div>
+		</div>
+		</div>
+	</section>
+</body>
+</html>

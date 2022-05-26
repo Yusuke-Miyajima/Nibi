@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/hannari.css');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Comfortaa&family=Poppins:wght@300&family=Roboto+Slab&display=swap');
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	margin:0;
+	padding:0;
+	font-family:'Poppins',"sans-serif","Hiragino Kaku Gothic ProN"; 
+	color:#5f5f5f;
+}
+.shopPage{
+	position:fixed;
+	z-index:1;
+	margin-top:0;
+	width:100vw;
+	height:100vh;
+	background-image:url("../images/shopImg.jpg");
+	background-size:cover;
+	-ms-overflow-style: none; 
+	overflow: scroll;
+}
+.shopPage::-webkit-scrollbar{
+	display:none;
+}
+.shopContents{
+	margin:20px;
+	margin-left:10px;
+	width:100vw;
+	height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-wrap:wrap;
+}
+.illustBox{
+	margin-top:20px;
+	width:400px;
+	height:400px;
+	z-index:4;
+	cursor:url("https://img.icons8.com/ios-filled/40/000000/circled-chevron-left.png"), auto;
+}
+.introcCntents{
+	padding:50px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	z-index:4;
+}
+img{
+	display: block;
+	width:100%;
+	cursor:url("https://img.icons8.com/ios-filled/40/000000/circled-chevron-left.png"), auto;
+
+}
+.illust1{
+	box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+	height:100%;
+	width:100%;
+	cursor:url("https://img.icons8.com/ios-filled/40/000000/circled-chevron-left.png"), auto;
+
+}
+#maingImage{
+	cursor:url("https://img.icons8.com/ios-filled/40/000000/circled-chevron-left.png"), auto;
+}
+h1{
+	font-size:38px;	
+	letter-spacing:15px;
+	margin-left:59.5px;
+	font-family:"hannari","Comfortaa","sans-serif","Hiragino Kaku Gothic ProN";
+
+}
+h2{
+	font-size:15px;	
+	letter-spacing:4px;
+	margin-left:45px;
+	font-family:"Comfortaa","sans-serif","Hiragino Kaku Gothic ProN";
+}
+.plotBox{
+	margin-top:30px;
+	padding:40px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	background-color: rgba(260,260,260,.3);
+	height:200px;
+	-ms-overflow-style:none; 
+	overflow-y:scroll;
+}
+::-webkit-scrollbar{
+	background-color: rgba(260,260,260,.0);
+	width:6px;
+}
+::-webkit-scrollbar-track{
+	background-color: rgba(250,250,250,.1);
+}
+::-webkit-scrollbar-thumb{
+	background-color:#5f5f5f;
+
+}
+h3{
+	margin-top:220px;
+		font-family:"hannari","Comfortaa","sans-serif","Hiragino Kaku Gothic ProN";
+}
+p{
+	margin-top:5px;
+	font-size:11px;
+	letter-spacing:1px;
+}
+.tableSong{
+	text-align:center;
+	height:140px;
+}
+ol{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	flex-wrap:wrap;	
+	height:120px;
+	margin-top:25px;
+	padding-left:55px;
+}
+ol li{
+	font-size:12px;
+	padding-top:3px;
+	letter-spacing:3px;
+	list-style-type: none;
+	font-family:"Comfortaa","sans-serif","Hiragino Kaku Gothic ProN";
+	color:black;
+	text-align:left;
+}
+.musicNum{
+	font-weight: normal;
+	font-size:12px;
+}
+.btnBox{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.priceFont{
+	letter-spacing:3px;
+	margin-right:30px;
+	color:black;
+}
+.buyBtn{
+	display:flex;
+	justify-content:center;
+	letter-spacing:3px;
+	font-size:15px;
+	padding:7px;
+	width:130px;
+	border-radius:25px;
+	transform: scale(0.9, 1);
+	transition: all .4s;
+	-webkit-transition: all .4s;
+	background-color:rgba(3,3,3,0.5);
+}
+.buyBtn:hover{
+	letter-spacing:6px;
+	padding-left:18px;
+	transition: all .4s;
+	-webkit-transition: all .4s;
+	background-color:rgba(10,10,10,0.7);
+}
+.buyBtn:active {
+	transition: all .3s;
+	-webkit-transition: all .3s;
+	opacity:0.5;
+	letter-spacing:3px;
+}
+.buyBtn a{
+	font-family:"Comfortaa","sans-serif","Hiragino Kaku Gothic ProN";
+	text-decoration: none;
+	color:white;
+}
+.underContents{
+	z-index:2;
+	margin-bottom:-30px;
+}
+.linkBox{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.linkCenter{
+	margin-top:4px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.shareIcon{
+	font-weight:700;
+	margin-right:10px;
+	font-size:12px;
+	letter-spacing:-1px;
+}
+.instIcon{
+	background: url("../images/instagram.png");
+	background-size:cover;
+	width:18px;
+	height:18px;
+	margin-right:10px;
+}
+.twitterIcon{	
+	background: url("../images/twitter.png");
+	background-size:cover;
+	width:18px;
+	height:18px;
+	margin-right:10px;
+}
+.facebookIcon{
+	background: url("../images/facebook.png");
+	background-size:cover;
+	width:18px;
+	height:18px;
+}
+.lineBox{
+	top:0;
+	display:flex;
+	justify-content:center;
+}
+.bottomLine{
+	background-color:#5f5f5f;
+	width:1.5px;
+	height:25px;
+}
