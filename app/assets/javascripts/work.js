@@ -18,17 +18,17 @@ window.onload = function() {
   }
   
   // 文字表示速度
-      let typTime=1;
+      let typTime=150;
   // フェードイン速度
       let fadeTime=500;
   
       let num1=0;
   
   
-  function changeDisabled0(){
-          if(num1==1) {
-          if(check0.checked) {
-          let element0=document.getElementById('page017');
+  function changeDisabled00(){
+      if(num1==0) {
+          if(check001.checked) {
+          let element0=document.getElementById('page019');
           let element1=document.getElementById('page1');
           element0.classList.add("typingBox0");
           element1.classList.add("typingBox0");	
@@ -47,6 +47,27 @@ window.onload = function() {
                   num1=1;
       }
   }
+
+    function changePage(id){
+        if(check1.checked) {
+            let element2=document.getElementById('page' + (id * 2));
+            let element3=document.getElementById('page' + (id * 2 + 1));
+            element2.classList.add("typingBox"+id);
+            element3.classList.add("typingBox"+id);	
+        
+            $('.typingBox'+id).children().andSelf().contents().each(function() {
+                if (this.nodeType == 3) {
+                    $(this).replaceWith($(this).text().replace(/(\S)/g, '<span>$1</span>'));
+                }
+            });
+            // ここから一文字ずつフェードインさせる記述
+            $('.typingBox'+id).css({'opacity':1});
+                for (var i = 0; i <= $('.typingBox'+id).children().size(); i++) {
+                    $('.typingBox'+id).children('span:eq('+i+')').delay(typTime*i).animate({'opacity':1},fadeTime);
+            };	
+        }
+        num1 += 1;
+    }
   
   function changeDisabled(){
       if(num1==1) {

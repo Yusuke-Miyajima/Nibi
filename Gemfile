@@ -31,3 +31,4 @@ group :test do
   gem "webdrivers"
 end
 gem 'jquery-rails'
+gem "sassc-rails"

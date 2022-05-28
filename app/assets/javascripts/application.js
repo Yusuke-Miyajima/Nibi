@@ -25,13 +25,10 @@ $(document).ready(function(){
     isEnabled: true,
     swapBetweenContainers: true,
     onChange: function (boxes) {
-      
     }
   });
 
   const setCookie = (name, json)=>{
-
-
     let cookies = '';
     let expire = '';
     let period = '';
