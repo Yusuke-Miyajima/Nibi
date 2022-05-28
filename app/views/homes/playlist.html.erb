@@ -32,78 +32,20 @@
                             <th>Music</th>
                             <th>Type</th>
                         </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Main Themen - Mizu no Hoshi -</td>
-                            <td>Music&SE</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Cycle</td>
-                            <td>SE</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Song of “us”</td>
-                            <td>Music&SE</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Crack</td>
-                            <td>Music</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>Cliff,Eating,Bell</td>
-                            <td>SE</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>Song of “You”</td>
-                            <td>Music&SE</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>Undercooked Fish</td>
-                            <td>SE</td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>Reminisce</td>
-                            <td>Music</td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>Shape of the Moon</td>
-                            <td>Music&SE</td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td>Wakare</td>
-                            <td>Music</td>
-                        </tr>
-                        <tr>
-                            <td>11</td>
-                            <td>Song of “I”</td>
-                            <td>Music&SE</td>
-                        </tr>
-                        <tr>
-                            <td>12</td>
-                            <td>Festival</td>
-                            <td>Music</td>
-                        </tr>
-                        <tr>
-                            <td>13</td>
-                            <td>Enroll -Tabiji -</td>
-                            <td>Music</td>
-                        </tr>
+                        <% Music.data.each do |music| %>
+                            <tr>
+                                <td><%= music[:id] %></td>
+                                <td><%= music[:name] %></td>
+                                <td><%= music[:type] %></td>
+                            </tr>
+                        <% end %>
                     </table>
                 </div>
             </div>
             <h2>-In/Out-</h2>
             <div class="inOutBox">
                 <div class="inOutWrap">
-                    <table class="inOutTable">
+                    <table id="dragable-table" class="inOutTable">
                         <tr>
                             <td>Page</td>
                             <td>Scene</td>
@@ -112,110 +54,20 @@
                             <td>#</td>
                             <td></td>
                         </tr>
-                        <tr>
-                            <td>P1</td>
-                            <td> 一年目</td>
-                            <td>生まれ落ちた望月</td>
-                            <td>暗転。</td>
-                            <td>Drag Music</td>
-                            <td>×</td>
-                        </tr>
-                        <tr>
-                            <td>P2</td>
-                            <td>循環の湖</td>
-                            <td>果てのない大きな湖</td>
-                            <td>みずのほしの大地へ還っていく。</td>
-                            <td>Drag Music</td>
-                            <td>×</td>
-                        </tr>
-                        <tr>
-                            <td>P3</td>
-                            <td>生き物全ての庭(翌日・夕方 〜夜))</td>
-                            <td>循環の湖のほど近く</td>
-                            <td>Usたち、歌い、踊り続けていている。</td>
-                            <td>Drag Music</td>
-                            <td>×</td>
-                        </tr>
-                        <tr>
-                            <td>P4</td>
-                            <td>循環の湖</td>
-                            <td>生まれた􏰅かりのusの頬に􏰆一本の 亀裂</td>
-                            <td>後ろ姿を見つめているI。</td>
-                            <td>Drag Music</td>
-                            <td>×</td>
-                        </tr>
-                        <tr>
-                            <td>P5</td>
-                            <td>囁きの高台)</td>
-                            <td>􏰄􏰃、座って木の実や葉など、自分が 集めた食材を食べている。</td>
-                            <td>立ち上がり、また湖を眺めるI。</td>
-                            <td>Drag Music</td>
-                            <td>×</td>
-                        </tr>
-                        <tr>
-                            <td>P6</td>
-                            <td>慟哭の木 (数日後・ 昼)</td>
-                            <td>チュンチュンと鳴く小鳥。</td>
-                            <td>歩いていく。</td>
-                            <td>Drag Music</td>
-                            <td>×</td>
-                        </tr>
-                        <tr>
-                            <td>P7</td>
-                            <td>至る川 (夜)</td>
-                            <td>焚火の前に座っているI。</td>
-                            <td>I、髪の毛を拭きながら、Meの後ろ姿を見ている</td>
-                            <td>Drag Music</td>
-                            <td>×</td>
-                        </tr>
-                        <tr>
-                            <td>P11</td>
-                            <td>空白の洞窟</td>
-                            <td>I 「......笑いたくない時があった」</td>
-                            <td>Me、洞窟の外を眺める。</td>
-                            <td>Drag Music</td>
-                            <td>×</td>
-                        </tr>
-                        <tr>
-                            <td>P13</td>
-                            <td>囁きの高台</td>
-                            <td>IとMe、なだらかな丘を歩いていく。</td>
-                            <td>新月。閉じていた目が開く。</td>
-                            <td>Drag Music</td>
-                            <td>×</td>
-                        </tr>
-                        <tr>
-                            <td>P17</td>
-                            <td>生き物全ての庭</td>
-                            <td>Iの後ろ姿を見ているMe。</td>
-                            <td>月の瞳、開いている。</td>
-                            <td>Drag Music</td>
-                            <td>×</td>
-                        </tr>
-                        <tr>
-                            <td>P23</td>
-                            <td>ひかりの道</td>
-                            <td>I「私たち􏰆あなた。あなた􏰆、わたし たち。わたし􏰆私。」</td>
-                            <td>ふたりの間を風が通り過ぎていく。</td>
-                            <td>Drag Music</td>
-                            <td>×</td>
-                        </tr>
-                        <tr>
-                            <td>P24</td>
-                            <td>生き物すべての庭</td>
-                            <td>(真夜中) I、踊りながら歌い始める</td>
-                            <td>Meにも、Iにも、􏰄sにも見える。</td>
-                            <td>Drag Music</td>
-                            <td>×</td>
-                        </tr>
-                        <tr>
-                            <td>P24</td>
-                            <td>生き物すべての庭</td>
-                            <td>静まり返ったみずのほしに、リンドウ 色の夜明けがやって来る。</td>
-                            <td>-</td>
-                            <td>Drag Music</td>
-                            <td>×</td>
-                        </tr>
+                        <% MusicSetting.data.each do |setting| %>
+                            <tr data-page="<%= setting[:page] %>" class="music-setting-el">
+                                <td><%= setting[:page] %></td>
+                                <td><%= setting[:scene] %></td>
+                                <td><%= setting[:in] %></td>
+                                <td><%= setting[:out] %></td>
+                                <td class="music-container">
+                                    <% music_id = @music_settings[setting[:page]] || setting[:music] %>
+                                    <div id="<%= music_id %>" class="dragable music">
+                                        <%= Music.find(music_id).try(:[], :name) %>
+                                    </div>
+                                </td>
+                            </tr>
+                        <% end %>
                     </table>
                 </div>
             </div>

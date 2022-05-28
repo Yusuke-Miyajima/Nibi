@@ -6,16 +6,22 @@ default: &default
   password:
   host: localhost
 
+# development:
+#   <<: *default
+#   database: nibi_development
+
+# test:
+#   <<: *default
+#   database: nibi_test
+
+# production:
+#   <<: *default
+#   database: nibi_production
+#   username: nibi
+#   password: nibi
 development:
   <<: *default
   database: nibi_development
-
-test:
-  <<: *default
-  database: nibi_test
-
-production:
-  <<: *default
-  database: nibi_production
-  username: nibi
-  password: nibi
+  host: db
+  username: root
+  password: aaaa1234
