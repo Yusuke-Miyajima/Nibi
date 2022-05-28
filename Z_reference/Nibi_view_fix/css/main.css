@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/hannari.css');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Comfortaa&family=Poppins:wght@300&family=Roboto+Slab&display=swap');
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	margin:0;
+	padding:0;
+}
+.topPage{
+	margin:0;
+	padding:0;
+	width:100vw;
+	height:100vh;
+	background-image:url("../images/topImage.jpg");
+	background-size:cover;
+	font-family:'Poppins',"sans-serif","Hiragino Kaku Gothic ProN"; 
+	color:black;
+	display:flex;
+	justify-content:space-between;
+	align-items: flex-end;
+}
+h1{
+	margin-right:0.8px;
+	font-size:14px;
+	font-weight:lighter;
+	letter-spacing:0.8px;
+	z-index:100;
+}
+h2{
+	font-weight:lighter;
+}
+h3{
+	margin-top:-17px;
+	font-size:17px;
+	letter-spacing:3.6px;
+	z-index:100;
+	
+
+}
+.titleBox1{
+	margin-bottom:30px;
+	margin-left:30px;
+	display:flex;
+	flex-direction:column;
+	align-items:flex-start;
+}
+.titleBox{
+	margin-top:5px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	z-index:100;
+}
+.projectTitle{
+	margin-left:-2px;
+	margin-right:14px;
+	font-size:20px;
+	letter-spacing:2px;
+	font-family:"hannari";
+	z-index:100;
+	}
+.subTitle{
+	margin-left:1px;
+	font-size:17px;
+	letter-spacing:1px;
+	z-index:100;
+}
+.screened{
+	margin-top:7px;
+	margin-left:1px;
+	font-size:10px;
+	letter-spacing:1px;
+	z-index:100;
+}
+.cycleImage{
+	position:absolute;
+	width:390px;
+	height:390px;
+	border-radius:50%;
+	background-color:white;	
+	opacity:0.18;
+	z-index:0;
+}
+.cycleImge2{
+	margin-left:23px;
+	margin-top:1px;
+	opacity:0.18;
+}
+.btnBox1{
+	margin-right:10px;
+	margin-bottom:20px;
+}
+.btnBox{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.loginBtn{
+	font-size:13px;
+	letter-spacing:2px;
+	margin-right:19px;
+	padding:13px;
+	padding-left:23px;
+	padding-right:23px;
+	border-radius:25px;
+	transform: scale(0.9, 1);
+	transition: all .4s;
+	-webkit-transition: all .4s;
+	background-color:rgba(255,255,255,0.3);
+}
+.loginBtn:hover{
+	padding-left:23px;
+	padding-right:23px;
+	transition: all .4s;
+	-webkit-transition: all .4s;
+	background-color:rgba(255,255,255,0.7);
+}
+.loginBtn:active {
+	transition: all .3s;
+	-webkit-transition: all .3s;
+	opacity:0.5;
+	letter-spacing:3px;
+}
+.open {
+	cursor:pointer;
+}
+#pop-up {
+	display: none;
+}
+.overlay {
+	display: none;
+}
+#pop-up:checked + .overlay {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.6);
+	z-index:9999;
+}
+.window {
+	color:#727171;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 90vw;
+	max-width: 250px;
+	padding: 20px;
+	height: 150px;
+	background-color:rgba(255,255,255,0.8);
+	border-radius: 5px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	transform: translate(-50%, -50%);
+}
+.loginTitle{
+	font-size:23px;
+}
+.inputBox{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+.passBox{
+	font-size:14px;
+	letter-spacing:3px;
+	margin-top:20px;
+	outline: none;
+	height: 30px;
+	background-color: transparent;
+	border-color: #727171;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+}
+.loginBtn2{
+	border: none;
+	margin-top:20px;
+	padding:7px 25px 7px 28px;	
+	border-radius:5px;
+	font-size:13px;
+	color:white;
+	font-family:"Comfortaa","sans-serif","Hiragino Kaku Gothic ProN";
+	letter-spacing:3px;
+	background-color:#819299;
+	transition: all .4s;
+	-webkit-transition: all .4s;
+}
+.loginBtn2:hover{
+	opacity:0.7;
+	transition: all .4s;
+	-webkit-transition: all .4s;
+}
+.loginBtn2:active {
+	transition: all .3s;
+	-webkit-transition: all .3s;
+	opacity:0.5;
+}
+.close {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	cursor:pointer;
+}
+.buyBtn{
+	letter-spacing:3px;
+	font-size:13px;
+	margin-right:10px;
+	padding:10px;
+	padding-left:26px;
+	padding-right:26px;
+	border-radius:25px;
+	transform: scale(0.9, 1);
+	transition: all .4s;
+	-webkit-transition: all .4s;
+	z-index:5;
+	background-color:rgba(255,255,255,0.3);
+	font-family:"Comfortaa","sans-serif","Hiragino Kaku Gothic ProN";
+	font-weight: 500;
+}
+.buyBtn:hover{
+	transition: all .4s;
+	-webkit-transition: all .4s;
+	background-color:rgba(255,255,255,0.7);
+}
+.buyBtn:active {
+	transition: all .3s;
+	-webkit-transition: all .3s;
+	opacity:0.5;
+}
+.buyBtn a{
+	font-family:"Comfortaa","sans-serif","Hiragino Kaku Gothic ProN";
+	text-decoration: none;
+	color:black;
+}
+.lineBox{
+	display:flex;
+	justify-content:center;
+	bottom:0;
+}
+.bottomLine{
+	position:absolute;
+	bottom:0;
+	background-color:#727171;
+	width:1.5px;
+	height:30px;
+	
+}
