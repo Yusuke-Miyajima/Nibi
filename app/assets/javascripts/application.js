@@ -54,8 +54,8 @@ $(document).ready(function(){
   $(".keepBtn").on("click", function(){
     var settings = {};
     $(".music-setting-el").each(function(index, element){
-      var page = $(element).data("page");
-      var music = $(element).find(".music").attr("id");
+      var page = parseInt($(element).data("page"));
+      var music = parseInt($(element).find(".music").attr("id"));
       settings[page] = music;
     });
     setCookie("music_settings", settings);

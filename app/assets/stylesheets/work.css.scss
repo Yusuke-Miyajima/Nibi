@@ -79,7 +79,7 @@ p{
 	font-size:14px;
 	letter-spacing:1px;
 	line-height:25px;
-	font-family:"M PLUS Rounded 1c","Comfortaa","sans-serif","Hiragino Kaku Gothic ProN";
+	font-family:'Source Sans Pro', sans-serif,"Comfortaa","sans-serif","Hiragino Kaku Gothic ProN";
 	width:540px;
 	display:flex;
 		justify-content:center;
@@ -780,4 +780,7 @@ opacity: 0;
 	background-image:url("/assets/work/illust11.png");
 	background-size:cover;
 }
-
+.page118{
+	background-image:url("/assets/work/illust14.jpg");
+	background-size:cover;
+}
