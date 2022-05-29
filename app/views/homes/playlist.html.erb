@@ -1,78 +1,72 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="utf-8">
-    <title>Mizu no Hoshi Top</title>
-</head>
-<body>
-    <!-- メニューバー  -->
-    <span class="menuBox">
-        <input id="menu-cb" type="checkbox" value="off">
-        <label id="menu-icon" for="menu-cb">≡</label><label id="menu-cl" for="menu-cb">×</label>
-        <label id="menu-background" for="menu-cb"></label>
-        <div id="ham-menu">
-            <ul>
-                <li><label id="menuBotan" for="menu-cb"><a href="../work/index.html">Nibi/みずのほしについて</a></label></li>
-                <li><a href="../playlist/index.html">プレイリスト</a></li>
-                <li><a href="../shop/index.html">作品購入</a></li>
-            </ul>
+
+<!-- メニューバー  -->
+<span class="menuBox">
+    <input id="menu-cb" type="checkbox" value="off">
+    <label id="menu-icon" for="menu-cb">≡</label><label id="menu-cl" for="menu-cb">×</label>
+    <label id="menu-background" for="menu-cb"></label>
+    <div id="ham-menu">
+        <ul>
+            <li><label id="menuBotan" for="menu-cb"><a href="../work/index.html">Nibi/みずのほしについて</a></label></li>
+            <li><a href="../playlist/index.html">プレイリスト</a></li>
+            <li><a href="../shop/index.html">作品購入</a></li>
+        </ul>
+    </div>
+</span>
+<!-- プレイリスト -->
+<section class="playlistPage">
+    <h1>Playlist</h1>
+    <p>プレイリストページでは脚本ページ内で再生される音楽の曲順を自由に変更できます。</p>
+    <p>MusicListからIn/Outへ、好きなシーンへドラッグ＆ドロップし、保存ボタンを押すと適用されます。</p>
+    <p>『みずのほし』を自分なりに編集することで、この作品により深く触れることができます。</p>
+    <h2>-Music List-</h2>
+    <div class="musicBox">
+        <div class="musicTbWrap">
+            <table class="musicTable">
+                <tr>
+                    <th>#</th>
+                    <th>Music</th>
+                    <th>Type</th>
+                </tr>
+                <% Music.data.each do |music| %>
+                    <tr>
+                        <td><%= music[:id] %></td>
+                        <td><%= music[:name] %></td>
+                        <td><%= music[:type] %></td>
+                    </tr>
+                <% end %>
+            </table>
         </div>
-        <!-- プレイリスト -->
-        <section class="playlistPage">
-            <h1>Playlist</h1>
-            <p>プレイリストページでは脚本ページ内で再生される音楽の曲順を自由に変更できます。</p>
-            <p>MusicListからIn/Outへ、好きなシーンへドラッグ＆ドロップし、保存ボタンを押すと適用されます。</p>
-            <p>『みずのほし』を自分なりに編集することで、この作品により深く触れることができます。</p>
-            <h2>-Music List-</h2>
-            <div class="musicBox">
-                <div class="musicTbWrap">
-                    <table class="musicTable">
-                        <tr>
-                            <th>#</th>
-                            <th>Music</th>
-                            <th>Type</th>
-                        </tr>
-                        <% Music.data.each do |music| %>
-                            <tr>
-                                <td><%= music[:id] %></td>
-                                <td><%= music[:name] %></td>
-                                <td><%= music[:type] %></td>
-                            </tr>
-                        <% end %>
-                    </table>
-                </div>
-            </div>
-            <h2>-In/Out-</h2>
-            <div class="inOutBox">
-                <div class="inOutWrap">
-                    <table id="dragable-table" class="inOutTable">
-                        <tr>
-                            <td>Page</td>
-                            <td>Scene</td>
-                            <td>in</td>
-                            <td>out</td>
-                            <td>#</td>
-                            <td></td>
-                        </tr>
-                        <% MusicSetting.data.each do |setting| %>
-                            <tr data-page="<%= setting[:page] %>" class="music-setting-el">
-                                <td><%= setting[:page] %></td>
-                                <td><%= setting[:scene] %></td>
-                                <td><%= setting[:in] %></td>
-                                <td><%= setting[:out] %></td>
-                                <td class="music-container">
-                                    <% music_id = @music_settings[setting[:page]] || setting[:music] %>
-                                    <div id="<%= music_id %>" class="dragable music">
-                                        <%= Music.find(music_id).try(:[], :name) %>
-                                    </div>
-                                </td>
-                            </tr>
-                        <% end %>
-                    </table>
-                </div>
-            </div>
-            <div class="keepBtn">
-                保存
-            </div>
-        </section>
-</body>
-</html>
+    </div>
+    <h2>-In/Out-</h2>
+    <div class="inOutBox">
+        <div class="inOutWrap">
+            <table id="dragable-table" class="inOutTable">
+                <tr>
+                    <td>Page</td>
+                    <td>Scene</td>
+                    <td>in</td>
+                    <td>out</td>
+                    <td>#</td>
+                    <td></td>
+                </tr>
+                <% MusicSetting.data.each do |setting| %>
+                    <tr data-page="<%= setting[:page] %>" class="music-setting-el">
+                        <td><%= setting[:page] %></td>
+                        <td><%= setting[:scene] %></td>
+                        <td><%= setting[:in] %></td>
+                        <td><%= setting[:out] %></td>
+                        <td class="music-container">
+                            <% music_id = @music_settings[setting[:page].to_s].to_i || setting[:music] %>
+                            <div id="<%= music_id %>" class="dragable music">
+                                <%= Music.find(music_id).try(:[], :name) %>
+                            </div>
+                        </td>
+                    </tr>
+                <% end %>
+            </table>
+        </div>
+    </div>
+    <div class="keepBtn">
+        保存
+    </div>
+</section>

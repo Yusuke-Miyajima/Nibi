@@ -1,179 +1,170 @@
-<!DOCTYP html>
-<head>
-	<meta charset="utf-8">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<title>Mizu no Hoshi Work</title>
-</head>
-<body>
-	<!-- ポップアップ  -->
-	<div class="popup" id="js-popup">
-		<div class="popup-inner example">
-			<div class="close-btn" id="js-close-btn" onclick="changeDisabled0()">
-				×
-			</div>
-			<div class="titleBox">
-				<h2>みずのほし について</h2>
-			</div>
-			<p>-頭の中だけで上映される映画-</p>
-			<br>
-			<p>映画には必ず映像があります。</p>
-			<p>様々な表情や景色を切り取り繋げる映像は、映画にとって欠かせない存在です。</p>
-			<br>
-			<p>しかし『みずのほし』には、”映像”がありません。</p>
-			<p>その代わりに、私たちは”音楽・脚本・イラスト”の要素で作品を形作りました。</p>
-			<p>そして作品を完成させる為にはもう一つ必要な要素があります。</p>
-			<p>それは想像することで、頭に浮かぶ”物語の景色”です。</p>
-			<p>”音楽・脚本・イラスト”とあなただけの”景色”</p>
-			<p>これらの要素が合わさることで、この作品は映画として完成します。</p>
-			<br>
-			<p>『みずのほし』が新しい映画体験となること、</p>
-			<p>そして受け取ってくださった方と、見えないけれど、</p>
-			<p>確かな繋がりを得られたらーーそう願って、制作をしました。</p>
-			<br>
-			<p>イラストを見て、脚本を読み、音楽を聴き、目を瞑り、</p>
-			<p>あなただけの『みずのほし』を上映してください。</p>
-			<p>最後まで上映が止まらないことを願っています。</p>
-			<br>
-			<p>Nibi</p>
+<!-- ポップアップ  -->
+<div class="popup" id="js-popup">
+	<div class="popup-inner example">
+		<div class="close-btn" id="js-close-btn" onclick="changeDisabled0()">
+			×
 		</div>
-		<div class="white-background" id="js-black-bg" onclick="changeDisabled0()">
+		<div class="titleBox">
+			<h2>みずのほし について</h2>
 		</div>
+		<p>-頭の中だけで上映される映画-</p>
+		<br>
+		<p>映画には必ず映像があります。</p>
+		<p>様々な表情や景色を切り取り繋げる映像は、映画にとって欠かせない存在です。</p>
+		<br>
+		<p>しかし『みずのほし』には、”映像”がありません。</p>
+		<p>その代わりに、私たちは”音楽・脚本・イラスト”の要素で作品を形作りました。</p>
+		<p>そして作品を完成させる為にはもう一つ必要な要素があります。</p>
+		<p>それは想像することで、頭に浮かぶ”物語の景色”です。</p>
+		<p>”音楽・脚本・イラスト”とあなただけの”景色”</p>
+		<p>これらの要素が合わさることで、この作品は映画として完成します。</p>
+		<br>
+		<p>『みずのほし』が新しい映画体験となること、</p>
+		<p>そして受け取ってくださった方と、見えないけれど、</p>
+		<p>確かな繋がりを得られたらーーそう願って、制作をしました。</p>
+		<br>
+		<p>イラストを見て、脚本を読み、音楽を聴き、目を瞑り、</p>
+		<p>あなただけの『みずのほし』を上映してください。</p>
+		<p>最後まで上映が止まらないことを願っています。</p>
+		<br>
+		<p>Nibi</p>
 	</div>
-	<!-- メニューバー  -->
-	<span class="menuBox">
-		<input id="menu-cb" type="checkbox" value="off">
-		<label id="menu-icon" for="menu-cb">≡</label><label id="menu-cl" for="menu-cb">×</label>
-		<label id="menu-background" for="menu-cb"></label>
-		<div id="ham-menu">
-			<ul>
-				<li><label id="menuBotan" for="menu-cb"><a href="index.html">Nibi/みずのほしについて</a></label></li>
-				<li><a href="../playlist/index.html" >プレイリスト</a></li>
-				<li><a href="../shop/index.html">作品購入</a></li>
-			</ul>
+	<div class="white-background" id="js-black-bg" onclick="changeDisabled0()">
+	</div>
+</div>
+<!-- メニューバー  -->
+<span class="menuBox">
+	<input id="menu-cb" type="checkbox" value="off">
+	<label id="menu-icon" for="menu-cb">≡</label><label id="menu-cl" for="menu-cb">×</label>
+	<label id="menu-background" for="menu-cb"></label>
+	<div id="ham-menu">
+		<ul>
+			<li><label id="menuBotan" for="menu-cb"><a href="index.html">Nibi/みずのほしについて</a></label></li>
+			<li><a href="../playlist/index.html" >プレイリスト</a></li>
+			<li><a href="../shop/index.html">作品購入</a></li>
+		</ul>
+	</div>
+<!-- 台本ページ  -->
+<section class="workPage">	
+	<div class="scenario">
+		<div class="volumeBox">
+			<div class="songTitle">歌声が響く広場</div>
+			<div class="volumeImg"></div>
+			<input type="range" name="volume" min="0" max="10" class="volumeRange input-range">
 		</div>
-	<!-- 台本ページ  -->
-	<section class="workPage">	
-		<div class="scenario">
-			<div class="volumeBox">
-				<div class="songTitle">歌声が響く広場</div>
-				<div class="volumeImg"></div>
-				<input type="range" name="volume" min="0" max="10" class="volumeRange input-range">
-			</div>
-		<div class="cssbk">
-			<label>
-					<input type="checkbox" >
-					<span style="z-index: 121;" class="pageDesign page00 "><span id="page00">
-							</span>
+	<div class="cssbk">
+		<label>
+				<input type="checkbox" >
+				<span style="z-index: 121;" class="pageDesign page00 "><span id="page00">
 						</span>
-					<span class="pageDesign rightPage page01" ><span id="page01"></span>
 					</span>
-			</label>
-			<label>
-					<input type="checkbox"  >
-					<span style="z-index: 120;" class="pageDesign page02 "><span id="page02">
-							</span>
+				<span class="pageDesign rightPage page01" ><span id="page01"></span>
+				</span>
+		</label>
+		<label>
+				<input type="checkbox"  >
+				<span style="z-index: 120;" class="pageDesign page02 "><span id="page02">
 						</span>
-					<span class="pageDesign rightPage page03" ><span id="page03"></span>
 					</span>
-			</label>
-			<label>
-			<label>
-					<input type="checkbox"  >
-					<span style="z-index: 119;" class="pageDesign page04 "><span id="page04">
-							</span>
+				<span class="pageDesign rightPage page03" ><span id="page03"></span>
+				</span>
+		</label>
+		<label>
+		<label>
+				<input type="checkbox"  >
+				<span style="z-index: 119;" class="pageDesign page04 "><span id="page04">
 						</span>
-					<span class="pageDesign rightPage page05" ><span id="page05"></span>
 					</span>
-			</label>
-			<label>
-					<input type="checkbox" >
-					<span style="z-index: 118;" class="pageDesign page06 "><span id="page06">
-							</span>
+				<span class="pageDesign rightPage page05" ><span id="page05"></span>
+				</span>
+		</label>
+		<label>
+				<input type="checkbox" >
+				<span style="z-index: 118;" class="pageDesign page06 "><span id="page06">
 						</span>
-					<span class="pageDesign rightPage page07" ><span id="page07"></span>
 					</span>
-			</label>
-			<label>
-			<label>
-					<input type="checkbox" >
-					<span style="z-index: 117;" class="pageDesign page08"><span id="page08">
-							</span>
+				<span class="pageDesign rightPage page07" ><span id="page07"></span>
+				</span>
+		</label>
+		<label>
+		<label>
+				<input type="checkbox" >
+				<span style="z-index: 117;" class="pageDesign page08"><span id="page08">
 						</span>
-					<span class="pageDesign rightPage page09" ><span id="page09"></span>
 					</span>
-			</label>
-			<label>
-					<input type="checkbox"  >
-					<span style="z-index: 116;" class="pageDesign page010"><span id="page010">
-							</span>
+				<span class="pageDesign rightPage page09" ><span id="page09"></span>
+				</span>
+		</label>
+		<label>
+				<input type="checkbox"  >
+				<span style="z-index: 116;" class="pageDesign page010"><span id="page010">
 						</span>
-					<span class="pageDesign rightPage page011" ><span id="page011"></span>
 					</span>
-			</label>
-			<label>
-					<input type="checkbox"  >
-					<span style="z-index: 115;" class="pageDesign page012"><span id="page012">
-							</span>
+				<span class="pageDesign rightPage page011" ><span id="page011"></span>
+				</span>
+		</label>
+		<label>
+				<input type="checkbox"  >
+				<span style="z-index: 115;" class="pageDesign page012"><span id="page012">
 						</span>
-					<span class="pageDesign rightPage page013" ><span id="page013"></span>
 					</span>
-			</label>
-			<label>
-					<input type="checkbox" >
-					<span style="z-index: 114;" class="pageDesign page014"><span id="page014">
-							</span>
+				<span class="pageDesign rightPage page013" ><span id="page013"></span>
+				</span>
+		</label>
+		<label>
+				<input type="checkbox" >
+				<span style="z-index: 114;" class="pageDesign page014"><span id="page014">
 						</span>
-					<span class="pageDesign rightPage page015" ><span id="page015"></span>
 					</span>
-			</label>
-			<label>
-					<input type="checkbox"  >
-					<span style="z-index: 113;" class="pageDesign page016"><span id="page016">
-							</span>
+				<span class="pageDesign rightPage page015" ><span id="page015"></span>
+				</span>
+		</label>
+		<label>
+				<input type="checkbox"  >
+				<span style="z-index: 113;" class="pageDesign page016"><span id="page016">
 						</span>
-					<span class="pageDesign rightPage page017" ><span id="page017"></span>
 					</span>
-			</label>
-			<label>
-					<input type="checkbox" id="check0" data-id="0" class="changepage-checkbox">
-					<span style="z-index: 112;" class="pageDesign page018"><span id="page018">
-							</span>
+				<span class="pageDesign rightPage page017" ><span id="page017"></span>
+				</span>
+		</label>
+		<label>
+				<input type="checkbox" id="check0" data-id="0" class="changepage-checkbox">
+				<span style="z-index: 112;" class="pageDesign page018"><span id="page018">
 						</span>
-					<span class="pageDesign rightPage page019" ><span id="page0">aaa</span>
 					</span>
-			</label>
+				<span class="pageDesign rightPage page019" ><span id="page0">aaa</span>
+				</span>
+		</label>
 
-			<% Page.data.each_slice(2).with_index do |pages, index| %>
-				<label>
-					<input type="checkbox" id="check<%= index + 1 %>" data-id="<%= index + 1 %>" class="changepage-checkbox">
-					<span style="z-index: <%= 100 - index %>;" class="pageDesign <%= 'page1' if index == 0 || index == 28 || index == 39 %>">
-						<span id="page<%= (index * 2) + 1 %>">
-							<%= pages[0][:text].html_safe %>
-						</span>
-					</span>
-					<span class="pageDesign" >
-						<span id="page<%= (index + 1) * 2 %>">
-							<%= pages[1][:text].html_safe %>
-						</span>
-					</span>
-				</label>
-			<% end %>
-		
+		<% Page.data.each_slice(2).with_index do |pages, index| %>
 			<label>
-				<input type="checkbox" id="check59" onclick="changeDisabled59()">
-				<span style="z-index: 42;" class="pageDesign"><span id="page117">
-						&emsp;<br>
-						&emsp;<br></span>
+				<input type="checkbox" id="check<%= index + 1 %>" data-id="<%= index + 1 %>" class="changepage-checkbox">
+				<span style="z-index: <%= 100 - index %>;" class="pageDesign <%= 'page1' if index == 0 || index == 28 || index == 39 %>">
+					<span id="page<%= (index * 2) + 1 %>">
+						<%= pages[0][:text].html_safe %>
+					</span>
 				</span>
-				<span class="pageDesign page118"><span id="page118">
-						&emsp;<br>
-						&emsp;<br></span>
+				<span class="pageDesign" >
+					<span id="page<%= (index + 1) * 2 %>">
+						<%= pages[1][:text].html_safe %>
+					</span>
 				</span>
 			</label>
-		</div>
-		</div>
-		<div id="musics" style="display:none" <%= tag.attributes data: { musics: Music.data } %>></div>
-		<div id="music-settings" style="display:none" <%= tag.attributes data: { music_settings: @music_settings } %>></div>
-	</section>
-</body>
-</html>
+		<% end %>
+	
+		<label>
+			<input type="checkbox" id="check59" onclick="changeDisabled59()">
+			<span style="z-index: 42;" class="pageDesign"><span id="page117">
+					&emsp;<br>
+					&emsp;<br></span>
+			</span>
+			<span class="pageDesign page118"><span id="page118">
+					&emsp;<br>
+					&emsp;<br></span>
+			</span>
+		</label>
+	</div>
+	</div>
+	<div id="musics" style="display:none" <%= tag.attributes data: { musics: Music.data } %>></div>
+	<div id="music-settings" style="display:none" <%= tag.attributes data: { music_settings: @music_settings } %>></div>
+</section>

@@ -53,14 +53,14 @@ function changePage(id){
             element1.classList.add("typingBox" + id);
             element2.classList.add("typingBox" + id);	
         
-            $('.typingBox' + id).children().andSelf().contents().each(function() {
+            $('.typingBox' + id).children().addBack().contents().each(function() {
                 if (this.nodeType == 3) {
                     $(this).replaceWith($(this).text().replace(/(\S)/g, '<span>$1</span>'));
                 }
             });
             // ここから一文字ずつフェードインさせる記述
             $('.typingBox' + id).css({'opacity': 1});
-            for (var i = 0; i <= $('.typingBox' + id).children().size(); i++) {
+            for (var i = 0; i <= $('.typingBox' + id).children().length; i++) {
                 $('.typingBox' + id).children('span:eq('+i+')').delay(typTime * i).animate({'opacity':1},fadeTime);
             };	
         }
