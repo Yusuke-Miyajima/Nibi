@@ -14,60 +14,72 @@ window.onload = function() {
       elem.addEventListener('click', function() {
         popup.classList.remove('is-show');
       })
-      }
-  }
-  
-  // 文字表示速度
-      let typTime=150;
-  // フェードイン速度
-      let fadeTime=500;
-  
-      let num1=0;
-  
-  
-  function changeDisabled00(){
-      if(num1==0) {
-          if(check001.checked) {
-          let element0=document.getElementById('page019');
-          let element1=document.getElementById('page1');
-          element0.classList.add("typingBox0");
-          element1.classList.add("typingBox0");	
-          
-          $('.typingBox0').children().andSelf().contents().each(function() {
-              if (this.nodeType == 3) {
-                      $(this).replaceWith($(this).text().replace(/(\S)/g, '<span>$1</span>'));
-              }
-          });
-          // ここから一文字ずつフェードインさせる記述
-          $('.typingBox0').css({'opacity':1});
-              for (var i = 0; i <= $('.typingBox0').children().size(); i++) {
-                  $('.typingBox0').children('span:eq('+i+')').delay(typTime*i).animate({'opacity':1},fadeTime);
-          };	
-          }
-                  num1=1;
-      }
-  }
+    }
 
-    function changePage(id){
-        if(check1.checked) {
-            let element2=document.getElementById('page' + (id * 2));
-            let element3=document.getElementById('page' + (id * 2 + 1));
-            element2.classList.add("typingBox"+id);
-            element3.classList.add("typingBox"+id);	
+    
+  }
+$(document).ready(function(){
+  $(".changepage-checkbox").on("click", function(){
+    var id = parseInt($(this).data("id"));
+    changePage(id);
+  });
+});
+
+// 文字表示速度
+let typTime=150;
+// フェードイン速度
+let fadeTime=500;
+
+let num1=0;
+  
+  
+function changeDisabled00(){
+    console.log("changeDisabled00")
+    if(num1==0) {
+        if(check001.checked) {
+        let element0=document.getElementById('page019');
+        let element1=document.getElementById('page1');
+        element0.classList.add("typingBox0");
+        element1.classList.add("typingBox0");	
         
-            $('.typingBox'+id).children().andSelf().contents().each(function() {
+        $('.typingBox0').children().andSelf().contents().each(function() {
+            if (this.nodeType == 3) {
+                $(this).replaceWith($(this).text().replace(/(\S)/g, '<span>$1</span>'));
+            }
+        });
+        // ここから一文字ずつフェードインさせる記述
+        $('.typingBox0').css({'opacity':1});
+        for (var i = 0; i <= $('.typingBox0').children().size(); i++) {
+            $('.typingBox0').children('span:eq('+i+')').delay(typTime*i).animate({'opacity':1},fadeTime);
+        };	
+        }
+        num1=1;
+    }
+}
+
+function changePage(id){
+    var check_el = document.getElementById("check" + id);
+    if(num1 == id) {
+        if(check_el.checked) {
+            let element1=document.getElementById("page" + (id * 2));
+            let element2=document.getElementById("page" + (id * 2 + 1));
+            element1.classList.add("typingBox" + id);
+            element2.classList.add("typingBox" + id);	
+        
+            $('.typingBox' + id).children().andSelf().contents().each(function() {
                 if (this.nodeType == 3) {
                     $(this).replaceWith($(this).text().replace(/(\S)/g, '<span>$1</span>'));
                 }
             });
             // ここから一文字ずつフェードインさせる記述
-            $('.typingBox'+id).css({'opacity':1});
-                for (var i = 0; i <= $('.typingBox'+id).children().size(); i++) {
-                    $('.typingBox'+id).children('span:eq('+i+')').delay(typTime*i).animate({'opacity':1},fadeTime);
+            $('.typingBox' + id).css({'opacity': 1});
+            for (var i = 0; i <= $('.typingBox' + id).children().size(); i++) {
+                $('.typingBox' + id).children('span:eq('+i+')').delay(typTime * i).animate({'opacity':1},fadeTime);
             };	
         }
-        num1 += 1;
-    }
+        num1 = id + 1;
+    }   
+}
   
   function changeDisabled(){
       if(num1==1) {

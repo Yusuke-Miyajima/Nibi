@@ -58,6 +58,5 @@ $(document).ready(function(){
       settings[page] = music;
     });
     setCookie("music_settings", settings);
-    console.log(settings);
   });
 });
