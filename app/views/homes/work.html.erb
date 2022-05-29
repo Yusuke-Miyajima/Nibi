@@ -135,11 +135,11 @@
 					</span>
 			</label>
 			<label>
-					<input type="checkbox" id="check001" onclick="changeDisabled00()">
+					<input type="checkbox" id="check0" data-id="0" class="changepage-checkbox">
 					<span style="z-index: 112;" class="pageDesign page018"><span id="page018">
 							</span>
 						</span>
-					<span class="pageDesign rightPage page019" ><span id="page019">aaa</span>
+					<span class="pageDesign rightPage page019" ><span id="page0">aaa</span>
 					</span>
 			</label>
 
@@ -172,6 +172,8 @@
 			</label>
 		</div>
 		</div>
+		<div id="musics" style="display:none" <%= tag.attributes data: { musics: Music.data } %>></div>
+		<div id="music-settings" style="display:none" <%= tag.attributes data: { music_settings: @music_settings } %>></div>
 	</section>
 </body>
 </html>
