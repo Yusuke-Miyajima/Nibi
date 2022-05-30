@@ -1,0 +1,47 @@
+version: '3.5'
+services:
+  mailcatcher:
+    restart: on-failure:10
+    image: dockage/mailcatcher:0.7.1
+    ports:
+      - "1080:1080"
+      - "1025:1025"
+  db:
+    restart: always
+    image: mariadb:latest
+    container_name: "nibi-db"
+    environment:
+      MYSQL_ROOT_PASSWORD: "aaaa1234"
+      MYSQL_HOST_AUTH_METHOD: "trust"
+    volumes:
+      - .:/home/Nibi/
+  app:
+    build:
+      context: ./
+      dockerfile: docker/Dockerfile
+    container_name: "nibi-app"
+    tty: true
+    stdin_open: true
+    volumes:
+      - .:/app
+      - type: tmpfs
+        target: /app/tmp/pids/
+    links:
+      - mailcatcher
+      - db
+    depends_on:
+      - db
+    command: bundle exec rails server -b 0.0.0.0
+    environment:
+      MYSQL_ROOT_PASSWORD: "aaaa1234"
+      DB_USER: root
+      DB_NAME: nibi_development
+      DB_PASSWORD: aaaa1234
+      DB_HOST: db
+      SMTP_HOST: mailcatcher
+    ports:
+      - 3000:3000
+networks:
+  default:
+    name: nibi_net
+    external: true

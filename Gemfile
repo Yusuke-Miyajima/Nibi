@@ -21,6 +21,8 @@ end
 
 group :development do
   gem "web-console"
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'pry-byebug'
 end
 
 group :test do
@@ -28,3 +30,5 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+gem "jquery-rails"
+gem "sassc-rails"

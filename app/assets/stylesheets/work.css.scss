@@ -1,0 +1,786 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/hannari.css');
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Comfortaa&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Comfortaa&family=Poppins:wght@300&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Comfortaa&family=Poppins:wght@300&family=Roboto+Slab&family=Source+Sans+Pro&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	margin:0;
+	padding:0;
+}
+/*ポップアップ */
+.popup {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	opacity: 0;
+	visibility: hidden;
+	transition: .6s;
+}
+.popup.is-show {
+	opacity: 1;
+	visibility: visible;
+}
+.popup-inner {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 70%;
+	max-width: 550px;
+	padding: 82px;
+	background-color: rgba(50,50,50,.8);
+	z-index: 2;
+	color:rgba(250,250,250,.8);
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+.close-btn {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+}
+.titleBox{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+h1{
+	font-size:33px;
+	font-family:'Poppins',"sans-serif","Hiragino Kaku Gothic ProN"; 
+	letter-spacing:-3px;
+	margin-left:6px;
+}
+h2{
+	margin-bottom:3.5px;
+	margin-bottom:3.5px;
+	font-size:45px;
+	letter-spacing:1px;
+	font-family:"hannari","sans-serif","Hiragino Kaku Gothic ProN";
+	margin-bottom:28px;
+}
+p{
+	font-size:14px;
+	letter-spacing:1px;
+	line-height:25px;
+	font-family:'Source Sans Pro', sans-serif,"Comfortaa","sans-serif","Hiragino Kaku Gothic ProN";
+	width:540px;
+	display:flex;
+		justify-content:center;
+	align-items:center;
+		flex-direction:column;
+	text-align: justify;
+}
+.white-background {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(233,233,233,.8);
+	z-index: 1;
+	cursor: pointer;
+}
+.example {
+	width: 100%; /*ブロックの幅*/
+	height: 500px; /*ブロックの高さ*/
+	-ms-overflow-style: none; 
+	overflow: scroll; /*スクロール*/
+}
+.example::-webkit-scrollbar{
+	display:none; /* Safari, chrome 対応 */
+}
+
+/*メニューバー*/
+#ham-menu {
+	background-color: #727171; 
+	box-sizing: border-box;
+	height: 100%;
+	padding: 10px 30px; 
+	position: fixed;
+	right: -100%;
+	top: 0;
+	transition: transform 0.3s linear 0s; 
+	width: 100%; 
+	z-index: 100;
+	opacity:0.8;
+}
+#menu-background {
+	display: block;
+	height: 100%;
+	opacity: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	transition: all 0.3s linear 0s; 
+	width: 100%;
+	z-index: -1;
+}
+
+#menu-icon {
+	color:#727171;
+	border-radius: 0 0 0 10px; 
+	cursor: pointer;
+	font-size: 45px; 
+	font-family:"Barlow","sans-serif","Hiragino Kaku Gothic ProN";
+	height: 45px; 
+	line-height: 45px; 
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 45px; 
+	transition: all 0.3s linear 0s; 
+	z-index: 100;
+}
+#menu-cl{
+	color:#727171;
+	border-radius: 0 0 0 10px; 
+	cursor: pointer;
+	font-size: 45px; 
+	font-family:"Barlow","sans-serif","Hiragino Kaku Gothic ProN";
+	height: 45px; 
+	line-height: 45px; 
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 45px; 
+	transition: all 0.3s linear 0s; 
+	z-index: 99;
+	opacity:0;
+}
+#menuBotan{
+	height: 45px;
+	width: 45px;
+	cursor: pointer;
+	background-color:#555;
+	transition: all 0.3s linear 0s; 
+	z-index: 100;
+	}
+#menu-cb {
+	display: none; 
+}
+
+#menu-cb:checked ~ #ham-menu,
+#menu-cb:checked ~ #menu-icon {
+	transform: translate(-250px); 
+}
+
+#menu-cb:checked ~ #menu-icon{
+	opacity:0;
+}
+
+#menu-cb:checked ~ #menu-cl{
+	transform: translate(-250px);
+	opacity:1;
+}
+#menu-cb:checked ~ #menu-background {
+	opacity: 0.5;
+	z-index: 99;
+}
+
+
+ul,li,a,.cycle{
+	font-family:"Hiragino Kaku Gothic ProN",Mieryo,sans-serif;
+	color: white;
+	font-size:14px;
+	letter-spacing:1px;
+	line-height:40px;
+}
+a{
+	display: block;
+	text-decoration:none;
+}
+ul{
+	list-style:none;
+	}
+
+/*台本ページ*/
+
+.workPage{
+	margin:0;
+	padding:0;
+	width:100vw;
+	height:100vh;
+	background-color:#f3f4f3;
+	background-size:cover;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	font-family: "Arial", "メイリオ";
+	font-size:12px;
+	color:#727171;
+	overflow:scroll;
+}
+.volumeBox{
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
+}
+.songTitle{
+	margin-top:-44px;
+	letter-spacing:2px;
+	font-size:12px;
+	color:#727171;
+	font-family:'Roboto Slab',"sans-serif","Hiragino Kaku Gothic ProN";
+}
+.volumeImg{
+	background-image:url("/assets/work/volume.png");
+	background-size:cover;
+	height:13px;
+	width:13px;
+	margin-top:-45px;
+	margin-left:20px;
+}
+.volumeRange{
+	margin-top:-45px;
+	margin-left:5px;
+}
+.input-range[type="range"] {
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #c7c7c7;
+	height: 2px;
+	width:60px;
+}
+input[type=range] {
+  -webkit-appearance: none;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	cursor: pointer;
+	height: 11px;
+	width: 11px;
+	border-radius: 7px;
+	background: #515151;
+}
+input[type=range]::-ms-thumb {
+	background: #515151;
+}
+.scenario{
+	width:900px;
+	height:450px;
+	margin:auto;
+	background-image:url("/assets/work/cover.jpg");
+	background-size:cover;
+	box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .07);
+}
+_::-webkit-full-page-media, _:future, :root .scenariofont{
+	font-family: "游ゴシック","YuGothic","Yu Gothic","游ゴシック体"; font-weight: 500;
+	right:-7px;
+	position:relative;
+}
+.scenariofont{
+	font-family: "游ゴシック","YuGothic","Yu Gothic","游ゴシック体"; font-weight: 500;
+}
+_::-webkit-full-page-media, _:future, :root .scenariofont2{
+	font-family: "游ゴシック","YuGothic","Yu Gothic","游ゴシック体"; font-weight: 500;
+	right:-10px;
+	position:relative;
+}
+.cssbk{
+	position:relative;
+	width:100%;
+	padding-bottom:71.5%;
+}
+.cssbk input{
+	display:none;
+}
+.cssbk input~span{
+	transition:2s;
+	-webkit-backface-visibility:hidden;
+	backface-visibility:hidden;
+	position:absolute;
+	width:51%;
+	height:70%;
+	background-color:#fffffb;
+	border:1px solid #ebebe6;
+}
+.cssbk input+span{
+	cursor:w-resize;
+	right:50%;
+	transform-origin:right;
+	transform:perspective(1500px) rotateY(0deg);
+}
+.cssbk input+span+span{
+	cursor:e-resize;
+	left:50%;
+	transform-origin:left;
+	transform:perspective(1500px) rotateY(-180deg);
+}
+.cssbk input:checked+span{
+	transform:perspective(1500px) rotateY(180deg);
+}
+.cssbk input:checked+span+span{
+	transform:perspective(1500px) rotateY(0deg);
+	
+}
+.typingBox0{
+opacity: 0;
+}
+.typingBox0 span{
+	opacity: 0;
+}
+.typingBox1{
+opacity: 0;
+}
+.typingBox1 span{
+	opacity: 0;
+}
+.typingBox2{
+opacity: 0;
+
+}
+.typingBox2 span{
+	opacity: 0;
+}
+.typingBox3{
+opacity: 0;
+
+}
+.typingBox3 span{
+	opacity: 0;
+}
+.typingBox4{
+opacity: 0;
+
+}
+.typingBox4 span{
+	opacity: 0;
+}
+.typingBox5{
+opacity: 0;
+
+}
+.typingBox5 span{
+	opacity: 0;
+}
+.typingBox6{
+opacity: 0;
+
+}
+.typingBox6 span{
+	opacity: 0;
+}
+.typingBox7{
+opacity: 0;
+
+}
+.typingBox7 span{
+	opacity: 0;
+}
+.typingBox8{
+opacity: 0;
+
+}
+.typingBox8 span{
+	opacity: 0;
+}
+.typingBox9{
+opacity: 0;
+
+}
+.typingBox9 span{
+	opacity: 0;
+	
+}.typingBox10{
+opacity: 0;
+
+}
+.typingBox10 span{
+	opacity: 0;
+	
+}.typingBox11{
+opacity: 0;
+}
+.typingBox11 span{
+	opacity: 0;
+	
+}.typingBox12{
+opacity: 0;
+}
+.typingBox12 span{
+	opacity: 0;
+	
+}.typingBox13{
+opacity: 0;
+}
+.typingBox13 span{
+	opacity: 0;
+	
+}.typingBox14{
+opacity: 0;
+}
+.typingBox14 span{
+	opacity: 0;
+	
+}.typingBox15{
+opacity: 0;
+}
+.typingBox15 span{
+	opacity: 0;
+}
+
+.typingBox16{
+opacity: 0;
+}
+.typingBox16 span{
+	opacity: 0;
+}
+
+.typingBox17{
+opacity: 0;
+}
+.typingBox17 span{
+	opacity: 0;
+}
+
+.typingBox18{
+opacity: 0;
+}
+.typingBox18 span{
+	opacity: 0;
+}
+
+.typingBox19{
+opacity: 0;
+}
+.typingBox19 span{
+	opacity: 0;
+}
+
+.typingBox20{
+opacity: 0;
+}
+.typingBox20 span{
+	opacity: 0;
+}
+
+.typingBox21{
+opacity: 0;
+}
+.typingBox21 span{
+	opacity: 0;
+}
+
+.typingBox22{
+opacity: 0;
+}
+.typingBox22 span{
+	opacity: 0;
+}
+
+.typingBox23{
+opacity: 0;
+}
+.typingBox23 span{
+	opacity: 0;
+}
+
+.typingBox24{
+opacity: 0;
+}
+.typingBox24 span{
+	opacity: 0;
+}
+
+.typingBox25{
+opacity: 0;
+}
+.typingBox25 span{
+	opacity: 0;
+}
+.typingBox26{
+opacity: 0;
+}
+.typingBox26 span{
+	opacity: 0;
+}.typingBox27{
+opacity: 0;
+}
+.typingBox27 span{
+	opacity: 0;
+}.typingBox28{
+opacity: 0;
+}
+.typingBox28 span{
+	opacity: 0;
+}.typingBox29{
+opacity: 0;
+}
+.typingBox29 span{
+	opacity: 0;
+}.typingBox30{
+opacity: 0;
+}
+.typingBox30 span{
+	opacity: 0;
+}.typingBox31{
+opacity: 0;
+}
+.typingBox31 span{
+	opacity: 0;
+}.typingBox32{
+opacity: 0;
+}
+.typingBox32 span{
+	opacity: 0;
+}.typingBox33{
+opacity: 0;
+}
+.typingBox33 span{
+	opacity: 0;
+}.typingBox34{
+opacity: 0;
+}
+.typingBox34 span{
+	opacity: 0;
+}.typingBox35{
+opacity: 0;
+}
+.typingBox35 span{
+	opacity: 0;
+}.typingBox36{
+opacity: 0;
+}
+.typingBox36 span{
+	opacity: 0;
+}.typingBox37{
+opacity: 0;
+}
+.typingBox37 span{
+	opacity: 0;
+}.typingBox38{
+opacity: 0;
+}
+.typingBox38 span{
+	opacity: 0;
+}.typingBox39{
+opacity: 0;
+}
+.typingBox39 span{
+	opacity: 0;
+}.typingBox40{
+opacity: 0;
+}
+.typingBox40 span{
+	opacity: 0;
+}.typingBox41{
+opacity: 0;
+}
+.typingBox41 span{
+	opacity: 0;
+}.typingBox42{
+opacity: 0;
+}
+.typingBox42 span{
+	opacity: 0;
+}.typingBox43{
+opacity: 0;
+}
+.typingBox43 span{
+	opacity: 0;
+}.typingBox44{
+opacity: 0;
+}
+.typingBox44 span{
+	opacity: 0;
+}.typingBox45{
+opacity: 0;
+}
+.typingBox45 span{
+	opacity: 0;
+}.typingBox46{
+opacity: 0;
+}
+.typingBox46 span{
+	opacity: 0;
+}.typingBox47{
+opacity: 0;
+}
+.typingBox47 span{
+	opacity: 0;
+}.typingBox48{
+opacity: 0;
+}
+.typingBox48 span{
+	opacity: 0;
+}.typingBox49{
+opacity: 0;
+}
+.typingBox49 span{
+	opacity: 0;
+}.typingBox50{
+opacity: 0;
+}
+.typingBox50 span{
+	opacity: 0;
+}.typingBox51{
+opacity: 0;
+}
+.typingBox51 span{
+	opacity: 0;
+}.typingBox52{
+opacity: 0;
+}
+.typingBox52 span{
+	opacity: 0;
+}.typingBox53{
+opacity: 0;
+}
+.typingBox53 span{
+	opacity: 0;
+}
+.typingBox54{
+opacity: 0;
+}
+.typingBox54 span{
+	opacity: 0;
+}
+.typingBox55{
+opacity: 0;
+}
+.typingBox55 span{
+	opacity: 0;
+}
+.typingBox56{
+opacity: 0;
+}
+.typingBox56 span{
+	opacity: 0;
+}
+.typingBox57{
+opacity: 0;
+}
+.typingBox57 span{
+	opacity: 0;
+}
+.typingBox58{
+opacity: 0;
+}
+.typingBox58 span{
+	opacity: 0;
+}
+.typingBox59{
+opacity: 0;
+}
+.typingBox59 span{
+	opacity: 0;
+}
+.pageDesign{
+	writing-mode: vertical-rl;
+	-ms-writing-mode: tb-rl;
+	-webkit-writing-mode:vertical-rl;   
+	line-height:24px;
+	letter-spacing:0.8px;
+	padding:0 5px;
+	-ms-writing-mode: tb-rl;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+}
+.page00{
+	background-image:url("/assets/work/title.png");
+	background-size:cover;
+}
+.page01{
+	background-image:url("/assets/work/mapOfMizu.jpg");
+	background-size:cover;
+}
+.page02{
+	background-image:url("/assets/work/map.jpg");
+	background-size:cover;
+}
+.page03{
+	background-image:url("/assets/work/charaFont.jpg");
+	background-size:cover;
+}
+.page04{
+	background-image:url("/assets/work/chara.jpg");
+	background-size:cover;
+}
+.page05{
+	background-image:url("/assets/work/realization.jpg");
+	background-size:cover;
+}
+.page06{
+	background-image:url("/assets/work/realizationImg.jpg");
+	background-size:cover;
+}
+.page07{
+	background-image:url("/assets/work/illust1.jpg");
+	background-size:cover;
+}
+.page08{
+	background-image:url("/assets/work/illust2.jpg");
+	background-size:cover;
+}
+.page09{
+	background-image:url("/assets/work/illust3.jpg");
+	background-size:cover;
+}
+.page010{
+	background-image:url("/assets/work/illust4.jpg");
+	background-size:cover;
+}
+.page011{
+	background-image:url("/assets/work/illust5.jpg");
+	background-size:cover;
+}
+.page012{
+	background-image:url("/assets/work/illust6.jpg");
+	background-size:cover;
+}
+.page013{
+	background-image:url("/assets/work/illust7.jpg");
+	background-size:cover;
+}
+.page014{
+	background-image:url("/assets/work/illust8.jpg");
+	background-size:cover;
+}
+.page015{
+	background-image:url("/assets/work/illust9.jpg");
+	background-size:cover;
+}
+.page016{
+	background-image:url("/assets/work/illust10.jpg");
+	background-size:cover;
+}
+.page017{
+	background-image:url("/assets/work/illust13.png");
+	background-size:cover;
+}
+.page018{
+	background-image:url("/assets/work/illust12.jpg");
+	background-size:cover;
+}
+.page019{
+	color:#fffffb;
+}
+.page1{
+	background-image:url("/assets/work/illust11.png");
+	background-size:cover;
+}
+.page118{
+	background-image:url("/assets/work/illust14.jpg");
+	background-size:cover;
+}

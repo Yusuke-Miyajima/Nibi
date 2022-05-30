@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/kokoro.css');
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Comfortaa&family=Poppins:wght@300&family=Roboto+Slab&family=Source+Sans+Pro&display=swap');
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	margin:0;
+	padding:0;
+	background-image:url("/assets/playlist/backImage.jpg");
+	background-size:cover;
+		font-family:'Poppins',"sans-serif","Hiragino Kaku Gothic ProN"; 
+}
+/*メニューバー*/
+#ham-menu {
+	background-color: #727171; 
+	box-sizing: border-box;
+	height: 100%;
+	padding: 10px 30px; 
+	position: fixed;
+	right: -100%;
+	top: 0;
+	transition: transform 0.3s linear 0s; 
+	width: 100%; 
+	z-index: 100;
+	opacity:0.8;
+}
+#menu-background {
+	display: block;
+	height: 100%;
+	opacity: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	transition: all 0.3s linear 0s; 
+	width: 100%;
+	z-index: -1;
+}
+
+#menu-icon {
+	color:white;
+	border-radius: 0 0 0 10px; 
+	cursor: pointer;
+	font-size: 45px; 
+	font-family:"Barlow","sans-serif","Hiragino Kaku Gothic ProN";
+	height: 45px; 
+	line-height: 45px; 
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 45px; 
+	transition: all 0.3s linear 0s; 
+	z-index: 100;
+}
+#menu-cl{
+	color:white;
+	border-radius: 0 0 0 10px; 
+	cursor: pointer;
+	font-size: 45px; 
+	font-family:"Barlow","sans-serif","Hiragino Kaku Gothic ProN";
+	height: 45px; 
+	line-height: 45px; 
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 45px; 
+	transition: all 0.3s linear 0s; 
+	z-index: 99;
+	opacity:0;
+}
+#menuBotan{
+	height: 45px;
+	width: 45px;
+	cursor: pointer;
+	background-color:#555;
+	transition: all 0.3s linear 0s; 
+	z-index: 100;
+	}
+#menu-cb {
+	display: none; 
+}
+
+#menu-cb:checked ~ #ham-menu,
+#menu-cb:checked ~ #menu-icon {
+	transform: translate(-250px); 
+}
+
+#menu-cb:checked ~ #menu-icon{
+	opacity:0;
+}
+
+#menu-cb:checked ~ #menu-cl{
+	transform: translate(-250px);
+	opacity:1;
+}
+#menu-cb:checked ~ #menu-background {
+	opacity: 0.5;
+	z-index: 99;
+}
+
+
+ul,li,a,.cycle{
+	font-family:"Hiragino Kaku Gothic ProN",Mieryo,sans-serif;
+	color: white;
+	font-size:15px;
+	letter-spacing:1px;
+	line-height:40px;
+}
+a{
+	display: block;
+	text-decoration:none;
+}
+ul{
+	list-style:none;
+	}
+/*プレイリスト画面*/
+.playlistPage{
+	margin:0;
+	padding:0;
+	width:100vw;
+	// height:100vh;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	font-family:"M PLUS Rounded 1c","Comfortaa","sans-serif","Hiragino Kaku Gothic ProN";
+	color:white;
+	background-color:rgba(100,100,100,0.58);
+}
+h1{
+	margin-right:13px;
+	font-size:48px;
+	letter-spacing:3px;
+	margin-left:14px;
+	z-index:100;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+h2{
+	font-size:15px;
+	font-weight:lighter;
+	letter-spacing:3px;
+	margin-top:30px;
+}
+p{
+	letter-spacing:2px;
+	font-size:11px;
+margin-top:5px;
+}
+.musicBox{
+	margin-top:12px;
+	border: solid 1px;
+	width:580px;
+	height:195px;
+}
+.musicTbWrap{
+	height:190px;
+	-ms-overflow-style:none; 
+	overflow-y:scroll;
+}
+::-webkit-scrollbar{
+	background-color:#5f5f5f;
+	width:5px;
+}
+::-webkit-scrollbar-track{
+	background-color:#5f5f5f;
+}
+::-webkit-scrollbar-thumb{
+	background:#d7d7d7;
+
+}
+.musicTable{
+	color:white;
+	margin-bottom:5px;
+	margin-top:5px;	
+	width:100%;
+}
+.musicTable th{
+	text-align:left;
+	font-size:11px;
+	padding-left:20px;
+}
+.musicTable td{
+	padding:1px 20px;
+	font-size:14px;
+}
+.inOutBox{
+	text-align:center;
+	margin-top:12px;
+	border: solid 1px;
+	width:660px;
+	height:184px;
+
+	}
+.inOutWrap{
+	height:178px;
+	overflow-y:scroll;
+	}
+.inOutTable{
+	color:white;
+	text-align:left;
+	margin-bottom:5px;
+	margin-top:5px;
+	font-size:12px;
+}
+.inOutTable th{
+	text-align:left;
+}
+.inOutTable td{
+	text-align:left;
+	padding:1px 14px;
+}
+.keepBtn{
+	margin-top:20px;
+	display:flex;
+	justify-content:center;
+	letter-spacing:3px;
+	font-size:13px;
+	padding:7px;
+	width:120px;
+	border-radius:25px;
+	transform: scale(0.9, 1);
+	transition: all .4s;
+	-webkit-transition: all .4s;
+	background-color:rgba(250,250,250,0.5);
+	color:black;
+}
+.keepBtn:hover{
+	letter-spacing:10px;
+	padding-left:14px;
+	transition: all .4s;
+	-webkit-transition: all .4s;
+	background-color:rgba(250,250,250,0.7);
+}
+.keepBtn:active {
+	transition: all .3s;
+	-webkit-transition: all .3s;
+	opacity:0.5;
+		letter-spacing:3px;
+}
+// .volumeBox{
+// 	position:absolute;
+// 	width:100vw;
+// 	bottom:25px;
+// 	display:flex;
+// 	justify-content:flex-end;
+// 	align-items:center;
+// }
+// .volumeImg{
+// 	background-image:url("/assets/playlist/volume.png");
+// 	background-size:cover;
+// 	height:13px;
+// 	width:13px;
+// 	margin-left:20px;
+// }
+// .volumeRange{
+// 	margin-right:30px;
+// 	margin-left:5px;
+// }
+.input-range[type="range"] {
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #c7c7c7;
+	height: 2px;
+	width:60px;
+}
+input[type=range] {
+  -webkit-appearance: none;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	cursor: pointer;
+	  height: 11px;
+	width: 11px;
+	border-radius: 7px;
+	 background: white;
+}
+input[type=range]::-ms-thumb {
+	background: white;
+}
+
+.dragable {
+	padding: 5px;
+}
+.dragable:hover {
+	background-color: lightgray;
+}
