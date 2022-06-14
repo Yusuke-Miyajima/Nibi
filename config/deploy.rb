@@ -3,7 +3,7 @@ lock "~> 3.17.0"
 
 # TODO change me!
 set :application, "nibi"
-set :repo_url, "git@github.com:Yusuke-Miyajima/Nibi.git"
+set :repo_url, "https://github.com/Yusuke-Miyajima/Nibi.git"
 
 # Default branch is :master
 set :branch, if ENV["BRANCH"]
