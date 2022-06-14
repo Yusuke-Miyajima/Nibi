@@ -59,7 +59,7 @@ namespace :deploy do
     on roles(:app), in: :sequence, wait: 5 do
       within release_path do
         if test "[ -f #{fetch(:puma_pid_file)} ]" and test :kill, "-0 $( cat #{fetch(:puma_pid_file)} )"
-          execute "RBENV_ROOT=~/.rbenv RBENV_VERSION=2.7.1 ~/.rbenv/bin/rbenv exec pumactl -S #{fetch(:puma_state_file)} restart"
+          execute "sudo systemctl restart puma"
         else
           execute "sudo systemctl start puma"
         end
