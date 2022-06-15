@@ -9,9 +9,9 @@
 body{
 	margin:0;
 	padding:0;
-	background-image:image-url("/assets/images/playlist/backImage.jpg");
+	background-image:asset-url("playlist/backImage.jpg");
 	background-size:cover;
-		font-family:'Poppins',"sans-serif","Hiragino Kaku Gothic ProN"; 
+	font-family:'Poppins',"sans-serif","Hiragino Kaku Gothic ProN"; 
 }
 /*メニューバー*/
 #ham-menu {
@@ -248,7 +248,7 @@ margin-top:5px;
 // 	align-items:center;
 // }
 // .volumeImg{
-// 	background-image:url("/assets/playlist/volume.png");
+// 	background-image:image-url("playlist/volume.png");
 // 	background-size:cover;
 // 	height:13px;
 // 	width:13px;

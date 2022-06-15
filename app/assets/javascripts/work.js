@@ -69,7 +69,10 @@ function changePage(id){
 }
   
 function playAudio(id) {
-    var setting = music_settings[id + 1];
+    var setting = music_settings[id * 2];
+    if (setting == undefined) {
+        setting = music_settings[id * 2 + 1];
+    }
     if (setting != undefined) {
         var music_id = setting.music;
         music_file = musics[parseInt(music_id) - 1].file

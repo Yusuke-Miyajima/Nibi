@@ -1,0 +1,4 @@
+deployer: "ec2-user"
+servers:
+  front:
+    - "localhost"

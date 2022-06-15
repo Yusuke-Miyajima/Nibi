@@ -23,6 +23,15 @@ group :development do
   gem "web-console"
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry-byebug'
+
+  # deploy
+  gem 'capistrano'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-sidekiq'
+  gem 'capistrano3-puma'
+  gem 'slack-ruby-client'
 end
 
 group :test do
@@ -32,3 +41,8 @@ group :test do
 end
 gem "jquery-rails"
 gem "sassc-rails"
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 6.0'
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '>= 1.3.0'
+gem 'terser'
