@@ -29,6 +29,8 @@ $(document).ready(function(){
     var check_el = document.getElementById("check" + id);
     if (check_el.checked) {
         playAudio(id);
+    } else {
+        playAudio(id - 1);
     }
   });
 });
