@@ -39,7 +39,7 @@ class MusicSetting
           start_after: 1 # 1 seconds
         },
         {
-          id: 20,
+          id: 5,
           page: 20,
           scene: "囁きの高台",
           in: "座って木の実や葉など、自分が 集めた食材を食べている",
