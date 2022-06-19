@@ -9,7 +9,7 @@ class HomesController < ApplicationController
 
     def work
         @music_settings = MusicSetting.data.inject({}) do |h, e|
-            e[:music] = @user_settings[e[:page]].to_i if @user_settings[e[:page]]
+            e[:music] = @user_settings[e[:id]].to_i if @user_settings[e[:id]]
             h.merge(e[:page] => e)
         end
     end

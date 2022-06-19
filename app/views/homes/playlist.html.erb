@@ -50,13 +50,13 @@
                     <td></td>
                 </tr>
                 <% MusicSetting.data.each do |setting| %>
-                    <tr data-page="<%= setting[:page] %>" class="music-setting-el">
+                    <tr data-id="<%= setting[:id] %>" class="music-setting-el">
                         <td><%= setting[:page] %></td>
                         <td><%= setting[:scene] %></td>
                         <td><%= setting[:in] %></td>
                         <td><%= setting[:out] %></td>
                         <td class="music-container">
-                            <% music_id = @user_settings[setting[:page]] || setting[:music] %>
+                            <% music_id = @user_settings[setting[:id]] || setting[:music] %>
                             <div id="<%= music_id %>" class="dragable music">
                                 <%= Music.find(music_id).try(:[], :name) %>
                             </div>
