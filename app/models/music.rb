@@ -10,79 +10,79 @@ class Music
           id: 1,
           name: "Main Themen - Mizu no Hoshi",
           type: "Music&SE",
-          file: "M1_Mizu no Hoshi - Main Theme - 0401.mp3"
+          file: "M1 Mizu no Hoshi - Main Theme -.wav"
         },
         {
           id: 2,
           name: "Cycle",
           type: "SE",
-          file: "M2_Cycle_0401.wav"
+          file: "M2 Cycle.wav"
         },
         {
           id: 3,
           name: "Song of “us”",
           type: "Music&SE",
-          file: 'M3_Song of "us" 0401.wav'
+          file: 'M3 Song of "us".wav'
         },
         {
           id: 4,
           name: "Crack",
           type: "Music",
-          file: "M4_Crack_0401.wav"
+          file: "M4 Crack.wav"
         },
         {
           id: 5,
           name: "Cliff,Eating,Bell",
           type: "SE",
-          file: "M5_Cliff,Eating,Bell_0401.wav"
+          file: "M5 Cliff,Eating,Bell.wav"
         },
         {
           id: 6,
           name: "Song of “You”",
           type: "Music&SE",
-          file: 'M6_Song of "You"_0401.wav'
+          file: 'M6 Song of "You".wav'
         },
         {
           id: 7,
           name: "Undercooked Fish",
           type: "SE",
-          file: "M7 Undercooked Fish_0401.wav"
+          file: "M7 Undercooked Fish.wav"
         },
         {
           id: 8,
           name: "Reminisce",
           type: "Music",
-          file: "M8 Reminisce_0401.wav"
+          file: "M8 Reminisce.wav"
         },
         {
           id: 9,
           name: "Shape of the Moon",
           type: "Music&SE",
-          file: "M9 Shape of The Moon_0401.wav"
+          file: "M9 Shape of The Moon.wav"
         },
         {
           id: 10,
           name: "Wakare",
           type: "Music",
-          file: "M10_Wakare_0401.wav"
+          file: "M10 Wakare.wav"
         },
         {
           id: 11,
           name: "Song of “I”",
           type: "Music&SE",
-          file: 'M11_Song of "i" 0401.wav'
+          file: 'M11 Song of "i" .wav'
         },
         {
           id: 12,
           name: "Festival",
           type: "Music",
-          file: "M12_Festival_0401.wav"
+          file: "M12 Festival.wav"
         },
         {
           id: 13,
           name: "Enroll -Tabiji",
           type: "Music",
-          file: "M13_Endroll - Tabiji - 0401.wav"
+          file: "M13 Endroll - Tabiji -.wav"
         }
       ]
     end
