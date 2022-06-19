@@ -3,6 +3,7 @@ class MusicSetting
     def data
       [
         {
+          id: 1,
           page: 1,
           scene: "一年目",
           in: "生まれ落ちた望月",
@@ -11,6 +12,7 @@ class MusicSetting
           start_after: 1 # 1 seconds
         },
         {
+          id: 4
           page: 4,
           scene: "循環の湖",
           in: "果てのない大きな湖",
@@ -19,6 +21,7 @@ class MusicSetting
           start_after: 1 # 1 seconds
         },
         {
+          id: 10
           page: 10,
           scene: "生き物全ての庭(翌日・夕方 〜夜))",
           in: "循環の湖のほど近く",
@@ -27,6 +30,7 @@ class MusicSetting
           start_after: 1 # 1 seconds
         },
         {
+          id: 16
           page: 16,
           scene: "循環の湖",
           in: "生まれたばかりのusの頬には一本の亀裂",
@@ -35,6 +39,7 @@ class MusicSetting
           start_after: 1 # 1 seconds
         },
         {
+          id: 5,
           page: 20,
           scene: "囁きの高台",
           in: "座って木の実や葉など、自分が 集めた食材を食べている",
@@ -43,6 +48,7 @@ class MusicSetting
           start_after: 1 # 1 seconds
         },
         {
+          id: 24
           page: 24,
           scene: "慟哭の木 (数日後・ 昼)",
           in: "チュンチュンと鳴く小鳥",
@@ -51,6 +57,7 @@ class MusicSetting
           start_after: 1 # 5 seconds
         },
         {
+          id: 30
           page: 30,
           scene: "至る川 (夜)",
           in: "焚火の前に座っているI。",
@@ -59,6 +66,7 @@ class MusicSetting
           start_after: 1 # 1 seconds
         },
         {
+          id: 51
           page: 51,
           scene: "空白の洞窟",
           in: "I 「......笑いたくない時があった」",
@@ -67,6 +75,7 @@ class MusicSetting
           start_after: 1 # 1 seconds
         },
         {
+          id: 60
           page: 60,
           scene: "囁きの高台",
           in: "IとMe、なだらかな丘を歩いていく。",
@@ -75,6 +84,7 @@ class MusicSetting
           start_after: 10 # 10 seconds
         },
         {
+          id: 85
           page: 85,
           scene: "生き物全ての庭",
           in: "Iの後ろ姿を見ているMe。",
@@ -83,6 +93,7 @@ class MusicSetting
           start_after: 1 # 1 seconds
         },
         {
+          id: 112
           page: 112,
           scene: "ひかりの道",
           in: "I「私たちはあなた。あなたは、わたしたち。わたしは私。」",
@@ -91,6 +102,7 @@ class MusicSetting
           start_after: 20 # 1 seconds
         },
         {
+          id: 121
           page: 121,
           scene: "生き物すべての庭",
           in: "(真夜中) I、踊りながら歌い始める",
@@ -99,6 +111,7 @@ class MusicSetting
           start_after: 5 # 1 seconds
         },
         {
+          id: 124
           page: 124,
           scene: "生き物すべての庭",
           in: "静まり返ったみずのほしに、リンドウ 色の夜明けがやって来る。",
