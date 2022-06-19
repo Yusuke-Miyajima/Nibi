@@ -146,11 +146,13 @@
 							<%= pages[0][:text].html_safe %>
 						</span>
 					</span>
+					<% if pages[1] %>
 					<span class="pageDesign" >
 						<span id="page<%= (index + 1) * 2 %>">
 							<%= pages[1][:text].html_safe %>
 						</span>
 					</span>
+					<% end %>
 				</label>
 			<% end %>
 			<label>
