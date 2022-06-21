@@ -94,10 +94,9 @@ function playAudio(id) {
 function changeDisabled59(){
       if(num1==59) {
       if(check59.checked) {
-          let element118=document.getElementById('page118');
+          let element118=document.getElementById('page130');
           element118.classList.add("typingBox59");
               
-          
           $('.typingBox59').children().andSelf().contents().each(function() {
               if (this.nodeType == 3) {
                       $(this).replaceWith($(this).text().replace(/(\S)/g, '<span>$1</span>'));
