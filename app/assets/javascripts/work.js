@@ -71,6 +71,14 @@ function changePage(id){
 }
   
 function playAudio(id) {
+    var music_stop_pages = [3, 12];
+    if (music_stop_pages.includes(id * 2) || music_stop_pages.includes(id * 2 + 1)){
+        // stop audio
+        if (!currentAudio.paused) {
+            currentAudio.pause();
+        }
+        return;
+    }
     var setting = music_settings[id * 2];
     if (setting == undefined) {
         setting = music_settings[id * 2 + 1];
