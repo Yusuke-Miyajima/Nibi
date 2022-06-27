@@ -63,16 +63,16 @@ class MusicSetting
           in: "焚火の前に座っているI。",
           out: "I、髪の毛を拭きながら、Meの後ろ姿を見ている",
           music: 7,
-          start_after: 9 # 1 seconds
+          start_after: 5 # 1 seconds
         },
         {
           id: 8,
-          page: 50,
+          page: 46,
           scene: "空白の洞窟",
           in: "I 「......笑いたくない時があった」",
           out: "Me、洞窟の外を眺める。",
           music: 8,
-          start_after: 1 # 1 seconds
+          start_after: 21 # 1 seconds
         },
         {
           id: 9,
@@ -81,7 +81,7 @@ class MusicSetting
           in: "IとMe、なだらかな丘を歩いていく。",
           out: "新月。閉じていた目が開く。",
           music: 9,
-          start_after: 46 # 10 seconds
+          start_after: 50 # 10 seconds
         },
         {
           id: 10,
@@ -90,7 +90,7 @@ class MusicSetting
           in: "Iの後ろ姿を見ているMe。",
           out: "月の瞳、開いている。",
           music: 10,
-          start_after: 59 # 1 seconds
+          start_after: 62 # 1 seconds
         },
         {
           id: 11,
