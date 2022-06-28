@@ -36,7 +36,7 @@ class MusicSetting
           in: "生まれたばかりのusの頬には一本の亀裂",
           out: "後ろ姿を見つめているI。",
           music: 4,
-          start_after: 14 # 1 seconds
+          start_after: 12 # 1 seconds
         },
         {
           id: 5,
@@ -63,7 +63,7 @@ class MusicSetting
           in: "焚火の前に座っているI。",
           out: "I、髪の毛を拭きながら、Meの後ろ姿を見ている",
           music: 7,
-          start_after: 5 # 1 seconds
+          start_after: 7 # 1 seconds
         },
         {
           id: 8,
@@ -81,7 +81,7 @@ class MusicSetting
           in: "IとMe、なだらかな丘を歩いていく。",
           out: "新月。閉じていた目が開く。",
           music: 9,
-          start_after: 50 # 10 seconds
+          start_after: 48 # 10 seconds
         },
         {
           id: 10,
