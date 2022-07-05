@@ -36,7 +36,7 @@ body{
 	flex-wrap:wrap;
 }
 .illustBox{
-	margin-top:20px;
+	margin-top:0px;
 	width:400px;
 	height:400px;
 	z-index:4;
@@ -80,14 +80,14 @@ h2{
 	font-family:"Comfortaa","sans-serif","Hiragino Kaku Gothic ProN";
 }
 .plotBox{
-	margin-top:30px;
+	margin-top:60px;
 	padding:40px;
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
 	align-items:center;
 	background-color: rgba(260,260,260,.3);
-	height:200px;
+	height:350px;
 	-ms-overflow-style:none; 
 	overflow-y:scroll;
 }
@@ -120,7 +120,7 @@ ol{
 	flex-direction:column;
 	justify-content:center;
 	flex-wrap:wrap;	
-	height:120px;
+	height:320px;
 	margin-top:25px;
 	padding-left:55px;
 }
@@ -139,6 +139,7 @@ ol li{
 }
 .btnBox{
 	display:flex;
+	padding-top:200px;
 	justify-content:center;
 	align-items:center;
 }

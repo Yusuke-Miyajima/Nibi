@@ -3,7 +3,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Mizu no Hoshi Shop</title>
-	<link href="css/main.css" rel="stylesheet" />
+	<%= stylesheet_link_tag "shop", :media => "all" %>
 </head>
 <body>
 	
@@ -11,7 +11,7 @@
 		<div class="shopContents">
 			<div class="illustBox">
 				<div class="illust1">
-					<img id="maingImage" src="images/illust1.jpg" alt="イラスト">
+					<%= image_tag 'shop/illust1.png' %>
 				</div>
 			</div>
 			<div class="introBox">
@@ -69,6 +69,6 @@
 			</div>
 		</div>
 	</section>
-	<script src="js/main.js"></script>
+	<script src="assets/shop.js"></script>
 </body>
 </html>

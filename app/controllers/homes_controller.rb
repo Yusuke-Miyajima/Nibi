@@ -2,6 +2,7 @@ class HomesController < ApplicationController
     before_action :load_cookie_settings, only: [:playlist, :work]
 
     def top
+        @password = Password.new
     end
 
     def playlist
