@@ -133,7 +133,7 @@
 			<% Page.data.each_slice(2).with_index do |pages, index| %>
 				<label>
 					<input type="checkbox" id="check<%= index + 1 %>" data-id="<%= index + 1 %>" class="changepage-checkbox">
-					<span style="z-index: <%= 100 - index %>;" class="pageDesign <%= 'page1' if index == 0 || index == 28 || index == 39 %>">
+					<span style="z-index: <%= 100 - index %>;" class="pageDesign <%= 'page1' if index == 0 || index == 31 || index == 43 %>">
 						<span id="page<%= (index * 2) + 1 %>">
 							<%= pages[0][:text].html_safe %>
 						</span>
@@ -149,11 +149,11 @@
 			<% end %>
 			<label>
 				<input type="checkbox" id="check59" onclick="changeDisabled59()">
-				<span style="z-index: 42;" class="pageDesign"><span id="page129">
+				<span style="z-index: 42;" class="pageDesign"><span id="page118">
 						&emsp;<br>
 						&emsp;<br></span>
 				</span>
-				<span class="pageDesign page118"><span id="page129">
+				<span class="pageDesign page118"><span id="page118">
 						&emsp;<br>
 						&emsp;<br></span>
 				</span>
