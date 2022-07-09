@@ -100,20 +100,20 @@ function playAudio(id) {
 }
 
 function changeDisabled59(){
-      if(num1==59) {
+      if(num1==65) {
       if(check59.checked) {
           let element118=document.getElementById('page130');
-          element118.classList.add("typingBox59");
+          element118.classList.add("typingBox65");
               
-          $('.typingBox59').children().andSelf().contents().each(function() {
+          $('.typingBox65').children().andSelf().contents().each(function() {
               if (this.nodeType == 3) {
                       $(this).replaceWith($(this).text().replace(/(\S)/g, '<span>$1</span>'));
               }
           });
           // ここから一文字ずつフェードインさせる記述
-          $('.typingBox59').css({'opacity':1});
-              for (var i = 0; i <= $('.typingBox59').children().size(); i++) {
-                  $('.typingBox59').children('span:eq('+i+')').delay(typTime*i).animate({'opacity':1},fadeTime);
+          $('.typingBox65').css({'opacity':1});
+              for (var i = 0; i <= $('.typingBox65').children().size(); i++) {
+                  $('.typingBox65').children('span:eq('+i+')').delay(typTime*i).animate({'opacity':1},fadeTime);
               };	
           }
                       num1=60;
