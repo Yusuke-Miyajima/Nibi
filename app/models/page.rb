@@ -385,6 +385,9 @@ class Page
        {:id=>129,
         :text=>
          "<br> <br>     （終）<br>"},
+       {:id=>130,
+        :text=>
+           " <br><br>"},
         ]
     end
   end
