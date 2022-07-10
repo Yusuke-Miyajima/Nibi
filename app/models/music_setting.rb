@@ -76,7 +76,7 @@ class MusicSetting
         },
         {
           id: 9,
-          page: 69,
+          page: 59,
           scene: "囁きの高台",
           in: "IとMe、なだらかな丘を歩いていく。",
           out: "新月。閉じていた目が開く。",
