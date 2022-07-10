@@ -36,11 +36,10 @@ body{
 	flex-wrap:wrap;
 }
 .illustBox{
-	margin-top:0px;
+	margin-bottom:275px;
 	width:400px;
 	height:400px;
 	z-index:4;
-	cursor:url("https://img.icons8.com/ios-filled/40/000000/circled-chevron-left.png"), auto;
 }
 .introcCntents{
 	padding:50px;
@@ -53,30 +52,25 @@ body{
 img{
 	display: block;
 	width:100%;
-	cursor:url("https://img.icons8.com/ios-filled/40/000000/circled-chevron-left.png"), auto;
 
 }
 .illust1{
 	box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
 	height:100%;
 	width:100%;
-	cursor:url("https://img.icons8.com/ios-filled/40/000000/circled-chevron-left.png"), auto;
 
 }
 #maingImage{
-	cursor:url("https://img.icons8.com/ios-filled/40/000000/circled-chevron-left.png"), auto;
 }
 h1{
 	font-size:38px;	
 	letter-spacing:15px;
-	margin-left:59.5px;
 	font-family:"hannari","Comfortaa","sans-serif","Hiragino Kaku Gothic ProN";
 
 }
 h2{
 	font-size:15px;	
 	letter-spacing:4px;
-	margin-left:45px;
 	font-family:"Comfortaa","sans-serif","Hiragino Kaku Gothic ProN";
 }
 .plotBox{
