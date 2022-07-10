@@ -103,7 +103,7 @@ class MusicSetting
         },
         {
           id: 12,
-          page: 120,
+          page: 124,
           scene: "生き物すべての庭",
           in: "(真夜中) I、踊りながら歌い始める",
           out: "Meにも、Iにも、usにも見える。",
@@ -112,7 +112,7 @@ class MusicSetting
         },
         {
           id: 13,
-          page: 124,
+          page: 128,
           scene: "生き物すべての庭",
           in: "静まり返ったみずのほしに、リンドウ 色の夜明けがやって来る。",
           out: "-",

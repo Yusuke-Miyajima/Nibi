@@ -71,7 +71,7 @@ function changePage(id){
 }
   
 function playAudio(id) {
-    var music_stop_pages = [6, 16, 20, 24, 34, 52, 66, 92, 116, 124];
+    var music_stop_pages = [6, 16, 20, 24, 34, 52, 66, 92, 116, 128];
     if (music_stop_pages.includes(id * 2) || music_stop_pages.includes(id * 2 + 1)){
         // stop audio
         if (!currentAudio.paused) {
