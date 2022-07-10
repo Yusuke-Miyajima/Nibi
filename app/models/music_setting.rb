@@ -85,7 +85,7 @@ class MusicSetting
         },
         {
           id: 10,
-          page: 93,
+          page: 83,
           scene: "生き物全ての庭",
           in: "Iを見つめているMe。",
           out: "月の瞳、Iを映している。",
