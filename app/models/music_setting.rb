@@ -67,7 +67,7 @@ class MusicSetting
         },
         {
           id: 8,
-          page: 56,
+          page: 46,
           scene: "空白の洞窟",
           in: "⚪空白の洞窟",
           out: "Me、洞窟の外を眺める。",
