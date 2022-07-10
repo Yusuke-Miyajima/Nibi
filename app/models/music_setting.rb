@@ -117,7 +117,7 @@ class MusicSetting
           in: "静まり返ったみずのほしに、リンドウ 色の夜明けがやって来る。",
           out: "-",
           music: 13,
-          start_after: 15 # 1 seconds
+          start_after: 17 # 1 seconds
         }
       ]
     end
