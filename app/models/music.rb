@@ -8,7 +8,7 @@ class Music
       [
         {
           id: 1,
-          name: "Main Themen - Mizu no Hoshi",
+          name: "Main Theme - Mizu no Hoshi -",
           type: "Music&SE",
           file: "M1 Mizu no Hoshi - Main Theme -.wav"
         },
@@ -80,7 +80,7 @@ class Music
         },
         {
           id: 13,
-          name: "Enroll -Tabiji",
+          name: "Endroll - Tabiji -",
           type: "Music",
           file: "M13 Endroll - Tabiji -.wav"
         }
