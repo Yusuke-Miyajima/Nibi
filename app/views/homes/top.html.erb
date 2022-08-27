@@ -7,7 +7,6 @@
 	<meta property="og:site_name" content="Nibi『みずのほし』公式サイト" />
 	<meta property="og:image" content="top/image.jpg" />
 	<title>Mizu no Hoshi Top</title>
-	<%= stylesheet_link_tag 'top.css', media: 'all', 'data-turbolinks-track': 'reload' %>
 </head>
 <body>
 	<section class="topPage">
@@ -20,10 +19,10 @@
 			<div class="screened">screened in mind, with only music, script and illustrations.</div>
 		</div>
 		<div class="btnBox1">
-		<div class="btnBox">
-			<div class="loginBtn">
-				<label class="open" for="pop-up"><%= link_to "start", "http://44.226.171.25/work" %></label>
-			</div>
+			<div class="btnBox">
+				<div class="loginBtn">
+					<label class="open" for="pop-up"><%= link_to "start", "http://44.226.171.25/work" %></label>
+				</div>
 			<div class="buyBtn"><a href="shop/index.html"><%= link_to "ご購入", "http://44.226.171.25/shop" %></a></div>
 		</div>
 		<input type="checkbox" id="pop-up">
