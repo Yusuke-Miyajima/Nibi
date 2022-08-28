@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   get 'work'=>'homes#work'
   get 'playlist'=>'homes#playlist'
 
-  root to: "homes#playlist"
+  root to: "homes#top"
 end

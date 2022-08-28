@@ -1,9 +1,28 @@
 class HomesController < ApplicationController
     before_action :load_cookie_settings, only: [:playlist, :work]
+#    before_action :autheniticate_password, only: [:playlist, :work]
 
-    def top
-        @password = Password.new
-    end
+#    def autheniticate_password
+#        if @current_password==nil
+#            flash[:notice]="ログインが必要です"
+#            redirect_to("/top")
+#        end
+#    end
+
+#    def set_current_password
+#        @current_password=User.find_by(password :session[:password])
+#    end
+
+#    def top
+#        @password = password.new()
+#    end
+
+#    def check
+#        @password = password.new()
+#        if @password == 'MoonEyes'
+#            redirect_to '/work'
+#        end
+#    end
 
     def playlist
     end
